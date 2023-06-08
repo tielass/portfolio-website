@@ -1,0 +1,29 @@
+.intro--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.intro--content {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+
+.intro--content .intro--img--container{
+  width: 100%;
+}
+
+.intro--content .intro--info {
+
+}
+
+.intro--content .intro--img--container .intro--img {
+  width: 100%;
+}
+
+.intro--content .social--media--intro a{
+  color: #F0AD2C;
+  padding-right: 1rem;
+}
