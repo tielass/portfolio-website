@@ -1,29 +1,86 @@
-.intro--container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3rem;
-}
-
+/* Container */
 .intro--content {
+  margin: 3rem auto;
   display: flex;
   justify-content: center;
-  width: 80%;
 }
 
-.intro--content .intro--img--container{
-  width: 100%;
+/* Info Container */
+
+.intro--content .intro--info--container {
+  width: 190px;
+  margin-right: 7rem;
 }
 
-.intro--content .intro--info {
 
+/* Heading */
+
+.intro--heading {
+  font-size: 42px;
 }
 
-.intro--content .intro--img--container .intro--img {
-  width: 100%;
+.yellow {
+  color: #FFBA2F;
+  cursor: pointer;
+}
+
+h1 {
+  position: relative;
+  display: inline-block;
+}
+
+h1::after {
+  content: "Pls hire me!";
+  position: absolute;
+  font-size: 16px;
+  text-align: center;
+  top: 45%;
+  left: 60%;
+  transform: translateY(-200%);
+  width: 100px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px 10px 10px 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+h1:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Social Media */
+
+.social--media--intro {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto;
 }
 
 .intro--content .social--media--intro a{
-  color: #F0AD2C;
-  padding-right: 1rem;
+  color: #000;
+}
+
+.intro--content .social--media--intro a:hover{
+  color: #FFBA2F;
+}
+
+
+.contact--me {
+  width: 100%;
+  border: none;
+  background-color: #FFBA2F;
+  color: #fff;
+  height: 44px;
+  border-radius: 6px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.contact--me:hover{
+  border: 2px solid #FFBA2F;
+  color: #FFBA2F;
+  background-color: rgba(255, 255, 255, 0.1);
 }

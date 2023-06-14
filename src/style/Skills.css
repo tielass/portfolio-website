@@ -1,0 +1,67 @@
+.skills--heading {
+  text-align: center;
+  padding: 2rem;
+}
+
+.skills--container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin: 3rem 10rem;
+}
+
+.skills--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+}
+
+/* Black Square */
+.black--square {
+  height: 200px;
+  background-color: #2A2B32;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+
+.black--square--info {
+  padding: 50px 10px 10px 10px;
+}
+
+.js--icon {
+  scale: 2;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+}
+
+.draw--icon {
+  scale:2;
+  color: #fff;
+}
+
+.illustration--icon {
+  scale:2;
+  color: #fff;
+}
+
+.design--icon{
+  scale:2;
+  color: #fff;
+}
+
+.graphic--design--icon {
+  scale: 0.5;
+}
+
+.custom--skill--header{
+  color: #fff;
+}
+
+.custom--skill--text {
+  color: #fff;
+  font-size: 10px;
+  padding: 0 20px;
+}

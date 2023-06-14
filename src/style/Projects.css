@@ -1,0 +1,22 @@
+.projects--container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project--heading {
+  text-align: center;
+  padding: 2rem;
+}
+
+.projects--filter{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+}
+
+.project--filter--item {
+  margin-right: 3rem;
+}

@@ -10,8 +10,8 @@ function Introduction() {
   return (
     <div className='intro--container'>
       <div className="intro--content">
-        <div className="intro--info">
-          <h2>Mihail <br></br> Mihaylov</h2>
+        <div className="intro--info--container">
+          <h1 className='intro--heading'><span className='yellow'>Mihail</span> <br></br> Mihaylov</h1>
           <p>I'm a Front-End Developer for  in Los Angeles, CA.
           I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
           Let's make something special.</p>
@@ -21,9 +21,12 @@ function Introduction() {
             <Link><LinkedInIcon></LinkedInIcon></Link>
             <Link><GitHubIcon></GitHubIcon></Link>
           </div>
+          <button className="contact--me">
+            CONTACT ME
+          </button>
         </div>
         <div className="intro--img--container">
-        <img src={ IntroImg } alt="introimage" className='intro--img' />
+          <img src={ IntroImg } alt="introimage" className='intro--img' />
         </div>
       </div>
     </div>
