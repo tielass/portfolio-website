@@ -2,7 +2,37 @@
   background-color: #ECECEC;
 }
 
+.experience--container {
+  padding-bottom: 3rem;
+}
+
 .experience--header {
   padding: 2rem;
   text-align: center;
+}
+
+/* Vertical Timeline */
+
+.vertical-timeline-element-icon{
+  background-color: #FFBA2F;
+  box-shadow: none;
+  scale: 0.6;
+}
+
+.timeline--icon {
+  scale: 1.5;
+}
+
+.vertical-timeline::before {
+  background-color: #FFBA2F;
+  width: 2px;
+}
+
+.vertical-timeline-element-content-arrow {
+  border: none;
+}
+
+.vertical-timeline-element-content {
+  background-color: #F6F6F6;
+  box-shadow: 0 3px 0 #FFBA2F;
 }
