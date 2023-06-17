@@ -19,7 +19,7 @@
   scale: 0.6;
 }
 
-.timeline--icon {
+.vertical-timeline-element-icon svg {
   scale: 1.5;
 }
 
@@ -29,10 +29,21 @@
 }
 
 .vertical-timeline-element-content-arrow {
-  border: none;
+  /* border: none; */
+  border-right: 7px solid #F6F6F6;
 }
 
 .vertical-timeline-element-content {
   background-color: #F6F6F6;
   box-shadow: 0 3px 0 #FFBA2F;
+}
+
+.experience--tags {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.experience--tag {
+  padding-right: 20px;
 }
