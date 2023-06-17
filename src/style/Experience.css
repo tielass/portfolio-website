@@ -30,7 +30,7 @@
 
 .vertical-timeline-element-content-arrow {
   /* border: none; */
-  border-right: 7px solid #F6F6F6;
+  border-right: 7px solid #FFBA2F;
 }
 
 .vertical-timeline-element-content {
@@ -42,8 +42,14 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
 }
 
 .experience--tag {
-  padding-right: 20px;
+  background-color: #FFBA2F;
+  border-radius: 50px;
+  padding: 2px 7px;
+  margin: 2px;
+  /* color: #fff; */
 }
