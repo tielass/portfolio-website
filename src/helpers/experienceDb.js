@@ -7,7 +7,7 @@ export const experienceDb = [
     company: "Le Wagon Bootcamp",
     description: "9-week full-time intensive coding Bootcamp learning HTML, CSS, Bootstrap,JavaScript ES6, SQL, git, GitHub, Heroku and Ruby on Rails. Designed, implemented and shipped to production a Rails prototype of https://www.giftit.one/",
     icon: 'education',
-    tags: []
+    tags: ['Ruby', 'Ruby on Rails', 'Javascript', 'SQL', 'HTML & CSS', 'Regex', "MVC"]
   },
   {
     id: 2,
