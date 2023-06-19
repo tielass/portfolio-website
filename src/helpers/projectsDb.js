@@ -14,7 +14,7 @@ export const projectsDb = [
     type: "fullstack",
     skills: ['ruby on rails', 'javascript', 'webapp design', 'figma', 'HTML & CSS'],
     url: 'https://www.giftit.one/',
-    tag: "Ruby on Rails"
+    tag: "Ruby / Rails"
   },
   {
     id: '2',
@@ -34,6 +34,56 @@ export const projectsDb = [
     type: "fullstack",
     skills: ['ruby on rails', 'javascript', 'webapp design', 'figma', 'HTML & CSS'],
     url: 'https://www.giftit.one/',
-    tag: "Ruby on Rails"
+    tag: "Ruby / Rails"
+  },
+  {
+    id: '4',
+    title: 'GiftIt',
+    description: 'Giftit is a webapp, which helps the user select the right gift, create events and invite friends to them and make use of the birthday calendar feature.  ',
+    image: [giftit4, giftit5],
+    type: "fullstack",
+    skills: ['ruby on rails', 'javascript', 'webapp design', 'figma', 'HTML & CSS'],
+    url: 'https://www.giftit.one/',
+    tag: "JavaScript"
+  },
+  {
+    id: '5',
+    title: 'GiftIt',
+    description: 'Giftit is a webapp, which helps the user select the right gift, create events and invite friends to them and make use of the birthday calendar feature.  ',
+    image: [giftit1, giftit2, giftit3],
+    type: "fullstack",
+    skills: ['ruby on rails', 'javascript', 'webapp design', 'figma', 'HTML & CSS'],
+    url: 'https://www.giftit.one/',
+    tag: "JavaScript"
+  },
+  {
+    id: '6',
+    title: 'AsfaltingLtd',
+    description: 'Website for the road construction company asfalting ltd',
+    image: [giftit4, giftit5],
+    type: "front-end",
+    skills: ['react', 'javascript', 'webapp design', 'figma', 'HTML & CSS', 'react-router-dom'],
+    url: 'https://www.giftit.one/',
+    tag: "React"
+  },
+  {
+    id: '7',
+    title: 'GiftIt',
+    description: 'Giftit is a webapp, which helps the user select the right gift, create events and invite friends to them and make use of the birthday calendar feature.  ',
+    image: [giftit4, giftit5],
+    type: "fullstack",
+    skills: ['ruby on rails', 'javascript', 'webapp design', 'figma', 'HTML & CSS'],
+    url: 'https://www.giftit.one/',
+    tag: "Ruby / Rails"
+  },
+  {
+    id: '8',
+    title: 'GiftIt',
+    description: 'Giftit is a webapp, which helps the user select the right gift, create events and invite friends to them and make use of the birthday calendar feature.  ',
+    image: [giftit4, giftit5],
+    type: "fullstack",
+    skills: ['ruby on rails', 'javascript', 'webapp design', 'figma', 'HTML & CSS'],
+    url: 'https://www.giftit.one/',
+    tag: "Ruby / Rails"
   }
 ]

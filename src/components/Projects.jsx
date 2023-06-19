@@ -3,9 +3,10 @@ import {Link} from 'react-router-dom'
 import FilterButton from './FilterButton'
 import '../style/Projects.css'
 import { projectsDb } from '../helpers/projectsDb'
+import ProjectCard from './ProjectCard'
 
 function Projects() {
-  const [tag, setTag] = useState()
+  const [tag, setTag] = useState('All')
   const [filteredProjects, setFilteredProjects] = useState([])
 
   useEffect(
@@ -16,7 +17,7 @@ function Projects() {
   )
 
   return (
-    <div className='projects--container'>
+    <div className='projects'>
       <h2 className="projects--heading">Projects</h2>
       <ul className="projects--filter">
         <li className="project--filter--item">
@@ -32,11 +33,11 @@ function Projects() {
           <FilterButton name='JavaScript' tagActive={tag === 'JavaScript' ? true : false} handleSetTag={ setTag }/>
         </li>
       </ul>
-      <div className="projects--gallery">
-        {projectsDb.map( (project) => {
+      <div className="projects--gallery--grid">
+        {filteredProjects.map( project => {
           return (
             <Link className='projects--card--link'>
-              { project.title }
+              <ProjectCard key={project.id} title={project.title} image={project.image[0]} tag={project.tag}/>
             </Link>
           )
         })}

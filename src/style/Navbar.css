@@ -1,3 +1,4 @@
+/* NavBar */
 .navbar {
   width: 100%;
   display: flex;
@@ -31,6 +32,8 @@
   align-items: center;
   margin-right: 4rem;
 }
+
+/* NavBar Links */
 
 .navbar .right--side a {
   margin-right: 3rem;
@@ -67,4 +70,23 @@
 
 .navbar .navbar--link:hover::after {
   width: 100%;
+}
+
+/* Active */
+
+.navbar .navbar--link.active {
+  color: #F0AD2C;
+}
+
+.navbar .navbar--link.active::after {
+  color: #F0AD2C;
+  content: '';
+  position: absolute;
+  background-color: #F0AD2C;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+  font-weight: bold;
 }
