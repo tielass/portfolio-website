@@ -1,11 +1,48 @@
-import React from 'react'
+// import React, {useState, useEffect} from 'react'
+// import {Link} from 'react-router-dom'
+// import FilterButton from './FilterButton'
+// import { projectsDb } from '../helpers/projectsDb'
+// import ProjectCard from './ProjectCard'
 
-function Illustration() {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+// function Projects() {
+//   const [tag, setTag] = useState('All')
+//   const [filteredProjects, setFilteredProjects] = useState([])
 
-export default Illustration
+//   useEffect(
+//     () => {
+//      tag === 'All' ? setFilteredProjects(projectsDb) : setFilteredProjects(projectsDb.filter( project => project.tag === tag))
+//     },
+//     [tag]
+//   )
+
+//   return (
+//     <div className='projects'>
+//       <h2 className="projects--heading">Projects</h2>
+//       <ul className="projects--filter">
+//         <li className="project--filter--item">
+//           <FilterButton name='All' tagActive={tag === 'All' ? true : false} handleSetTag={ setTag }/>
+//         </li>
+//         <li className="project--filter--item">
+//           <FilterButton name='React' tagActive={tag === 'React' ? true : false} handleSetTag={ setTag }/>
+//         </li>
+//         <li className="project--filter--item">
+//           <FilterButton name='Ruby / Rails' tagActive={tag === 'Ruby / Rails' ? true : false} handleSetTag={ setTag }/>
+//         </li>
+//         <li className="project--filter--item">
+//           <FilterButton name='JavaScript' tagActive={tag === 'JavaScript' ? true : false} handleSetTag={ setTag }/>
+//         </li>
+//       </ul>
+//       <div className="projects--gallery--grid">
+//         {filteredProjects.map( project => {
+//           return (
+//             <Link className='projects--card--link'>
+//               <ProjectCard key={project.id} title={project.title} image={project.image[0]} tag={project.tag}/>
+//             </Link>
+//           )
+//         })}
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default Projects
