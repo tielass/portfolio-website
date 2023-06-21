@@ -7,4 +7,7 @@
   box-sizing: border-box;
   font-family: Lato;
   background-color: #F6F6F6;
+  background: url('./images/lightmode-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
 }
