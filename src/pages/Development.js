@@ -3,7 +3,7 @@ import Projects from '../components/Projects'
 
 function Development() {
   return (
-    <div>
+    <div className='development'>
       <Projects />
     </div>
   )

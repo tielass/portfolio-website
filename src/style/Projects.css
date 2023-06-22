@@ -4,6 +4,9 @@
   justify-content: center;
   align-items: center;
   background-color: #EFEFEF;
+  background: url('../images/lightmode-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 .project--heading {

@@ -1,7 +1,7 @@
-import AlchemistVerena from '../images/illustrationImages/mihail-mihaylov-alchemist-verena.jpg'
-import Jeera from '../images/illustrationImages/mihail-mihaylov-jeera-mihaylov.jpg'
+import AlchemistVerena from '../images/illustrationImages/Thumbnail/mihail-mihaylov-alchemist-verena.jpg'
+import Jeera from '../images/illustrationImages/Thumbnail/mihail-mihaylov-jeera-mihaylov.jpg'
 import JeeraLineart from '../images/illustrationImages/mihail-mihaylov-jeera-lineart-mihaylov.jpg'
-import Cartographer from '../images/illustrationImages/mihail-mihaylov-sherak-cartographer-mihaylov.jpg'
+import Cartographer from '../images/illustrationImages/Thumbnail/mihail-mihaylov-sherak-cartographer-mihaylov.jpg'
 import CartographerGray from '../images/illustrationImages/mihail-mihaylov-sherak-cartographer-mihaylov-gray.jpg'
 
 export const illustrationDb = [
