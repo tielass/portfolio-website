@@ -34,7 +34,7 @@ function SingleProjectPage() {
             <ul className="tools">
               {singleProject.skills.map((skill) => (
                 <div className="project--tools">
-                  <li>{skill}</li>
+                  <li className='skill-tag'>{skill}</li>
                 </div>
               ))}
             </ul>
