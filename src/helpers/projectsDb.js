@@ -11,7 +11,7 @@ export const projectsDb = [
     id: '1',
     title: 'GiftIt',
     description: 'Giftit is a webapp, which helps the user select the right gift, create events and invite friends to them and make use of the birthday calendar feature.  ',
-    image: [giftitThumnail, giftit2, giftit3],
+    image: [giftitThumnail, giftit2, giftit3, giftit4, ],
     type: "fullstack",
     skills: ['ruby on rails', 'javascript', 'webapp design', 'figma', 'HTML & CSS'],
     url: 'https://www.giftit.one/',

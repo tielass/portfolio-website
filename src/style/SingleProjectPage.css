@@ -1,0 +1,29 @@
+/* Single Page */
+.single--page{
+  display: flex;
+  background-color: #F6F6F6;
+  padding: 1rem 10rem;
+}
+
+.single--project--container{
+  display: flex;
+  flex-direction: column;
+}
+
+.single--project--img{
+  width: 300px;
+}
+
+
+/* Image Grid */
+
+.project--images--all {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.project--images--one--img {
+  width: 200px;
+}
