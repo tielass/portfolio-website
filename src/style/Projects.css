@@ -44,7 +44,7 @@
 .projects--gallery--grid{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 4rem;
+  gap: 2rem;
   margin: 4rem 1rem;
 }
 
@@ -55,8 +55,8 @@
 }
 
 .projectcard--img--container {
-  width: 220px;
-  height: 220px;
+  width: 250px;
+  height: 190px;
 }
 
 .projectcard--img{

@@ -36,7 +36,7 @@ function Projects() {
       <div className="projects--gallery--grid">
         {filteredProjects.map( project => {
           return (
-            <Link className='projects--card--link'>
+            <Link className='projects--card--link' to={`/development/${project.id}`}>
               <ProjectCard key={project.id} title={project.title} image={project.image[0]} tag={project.tag}/>
             </Link>
           )

@@ -35,7 +35,7 @@ function Illustration() {
       <div className="projects--gallery--grid">
         {filteredIllustrations.map( project => {
           return (
-            <Link className='projects--card--link'>
+            <Link className='projects--card--link' to={`/illustration/${project.id}`}>
               <ProjectCard key={project.id} title={project.title} image={project.image[0]} tag={project.tag}/>
             </Link>
           )

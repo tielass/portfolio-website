@@ -7,7 +7,7 @@ import Illustration from './pages/Illustration'
 import Uiux from './pages/Uiux'
 import Visualdesign from './pages/Visualdesign'
 import Home from './pages/Home'
-
+import SingleProjectPage from './components/SingleProjectPage'
 
 function App() {
   return (
@@ -20,6 +20,8 @@ function App() {
           <Route path='/illustration' exact element={<Illustration />} />
           <Route path='/uiux' exact element={<Uiux />} />
           <Route path="/visualdesign/" exact element = { <Visualdesign /> } />
+          <Route path="/development/:id" exact element = { <SingleProjectPage /> } />
+          <Route path="/illustration/:id" exact element = { <SingleProjectPage /> } />
         </Routes>
         <Footer />
       </Router>
