@@ -6,7 +6,7 @@
   padding: 1rem 10rem;
 }
 
-.single--project--container{
+.single--project--left{
   display: flex;
   flex-direction: column;
 }
@@ -15,6 +15,30 @@
   width: 300px;
 }
 
+.single--project--left--top--container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Arrow */
+
+.arrow--right {
+  margin-right: 4rem;
+  cursor: pointer;
+}
+
+/* Image Grid */
+
+.project--images--all {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.project--images--one--img {
+  width: 200px;
+}
 
 /* Tools Used */
 
@@ -31,17 +55,4 @@
   border-radius: 50px;
   padding: 3px 9px;
   margin: 5px;
-}
-
-/* Image Grid */
-
-.project--images--all {
-  width: 70%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.project--images--one--img {
-  width: 200px;
 }

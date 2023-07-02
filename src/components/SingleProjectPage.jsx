@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom'
 import { projectsDb } from '../helpers/projectsDb'
 import { illustrationDb } from '../helpers/illustrationDb'
 import '../style/SingleProjectPage.css'
+import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
+import { ReactComponent as RightArrow } from '../images/right--arrow.svg'
 
 
 function SingleProjectPage() {
@@ -12,9 +14,12 @@ function SingleProjectPage() {
 
   return (
     <div className='single--page'>
-      <div className="single--project--container">
-        <div >
+      <div className="single--project--left">
+        <div className='single--project--left--top--container'>
           <img className="single--project--img" src={ singleProject.image[1]} alt="" />
+          <div  className='arrow--right'>
+            <RightArrow className='arrow--right-svg'/>
+          </div>
         </div>
         <div className="project--images--all">
           {singleProject.image.slice(1).map((singleImage, index) => (
@@ -24,22 +29,22 @@ function SingleProjectPage() {
           ))}
         </div>
       </div>
-        <div className="single--project--details">
-          <div>
-            <h2 className='project--title'>{singleProject.title}</h2>
-            <p className='project--description'>{singleProject.description}</p>
-          </div>
-          <div className="tools--used">
-            <h2 className="tools--heading">Tools Used</h2>
-            <ul className="tools">
-              {singleProject.skills.map((skill) => (
-                <div className="project--tools">
-                  <li className='skill-tag'>{skill}</li>
-                </div>
-              ))}
-            </ul>
-          </div>
+      <div className="single--project--right">
+        <div>
+          <h2 className='project--title'>{singleProject.title}</h2>
+          <p className='project--description'>{singleProject.description}</p>
         </div>
+        <div className="tools--used">
+          <h2 className="tools--heading">Tools Used</h2>
+          <ul className="tools">
+            {singleProject.skills.map((skill) => (
+              <div className="project--tools">
+                <li className='skill-tag'>{skill}</li>
+              </div>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
   )
 }
