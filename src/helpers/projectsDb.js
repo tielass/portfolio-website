@@ -1,4 +1,4 @@
-import giftit1 from '../images/giftit1.jpg'
+import giftit1 from '../images/illustrationImages/mihail-mihaylov-alchemist-verena.jpg'
 import giftit2 from '../images/giftit2.jpg'
 import giftit3 from '../images/giftit3.jpg'
 import giftit4 from '../images/giftit4.jpg'
@@ -11,7 +11,7 @@ export const projectsDb = [
     id: '1',
     title: 'GiftIt',
     description: 'Giftit is a webapp, which helps the user select the right gift, create events and invite friends to them and make use of the birthday calendar feature.  ',
-    image: [giftitThumnail, giftit2, giftit3, giftit4, giftit5 ],
+    image: [giftitThumnail, giftit1, giftit3, giftit4, giftit5 ],
     type: "fullstack",
     skills: ['Ruby on rails', 'Javascript', 'Webapp Design', 'Figma', 'HTML & CSS'],
     url: 'https://www.giftit.one/',
