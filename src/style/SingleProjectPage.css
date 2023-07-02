@@ -19,11 +19,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 /* Arrow */
 
 .arrow--right {
-  margin-right: 4rem;
+  scale: 0.8;
+  /* margin-right: 2rem; */
   cursor: pointer;
 }
 
@@ -40,11 +42,22 @@
   width: 200px;
 }
 
-/* Tools Used */
+/* Right Side */
+
+.single--project--right {
+  flex: 0.6;
+  text-align: center;
+}
+
+/* Tools */
+
+.tools--container {
+  margin-top: 5rem;
+}
 
 .tools {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;

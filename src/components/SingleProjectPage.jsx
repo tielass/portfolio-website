@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom'
 import { projectsDb } from '../helpers/projectsDb'
 import { illustrationDb } from '../helpers/illustrationDb'
 import '../style/SingleProjectPage.css'
-import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
 import { ReactComponent as RightArrow } from '../images/right--arrow.svg'
 
 
@@ -34,7 +33,7 @@ function SingleProjectPage() {
           <h2 className='project--title'>{singleProject.title}</h2>
           <p className='project--description'>{singleProject.description}</p>
         </div>
-        <div className="tools--used">
+        <div className="tools--container">
           <h2 className="tools--heading">Tools Used</h2>
           <ul className="tools">
             {singleProject.skills.map((skill) => (
