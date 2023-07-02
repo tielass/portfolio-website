@@ -1,4 +1,4 @@
-import giftit1 from '../images/illustrationImages/mihail-mihaylov-alchemist-verena.jpg'
+import giftit1 from '../images/giftit1.jpg'
 import giftit2 from '../images/giftit2.jpg'
 import giftit3 from '../images/giftit3.jpg'
 import giftit4 from '../images/giftit4.jpg'
@@ -8,7 +8,7 @@ import giftitThumnail from '../images/giftit1-small.png'
 
 export const projectsDb = [
   {
-    id: '1',
+    id: 1,
     title: 'GiftIt',
     description: 'Giftit is a webapp, which helps the user select the right gift, create events and invite friends to them and make use of the birthday calendar feature.  ',
     image: [giftitThumnail, giftit1, giftit3, giftit4, giftit5 ],
@@ -18,7 +18,7 @@ export const projectsDb = [
     tag: "Ruby / Rails"
   },
   {
-    id: '2',
+    id: 2,
     title: 'AsfaltingLtd',
     description: 'Website for the road construction company asfalting ltd',
     image: [giftit4, giftit5],
@@ -28,7 +28,7 @@ export const projectsDb = [
     tag: "React"
   },
   {
-    id: '3',
+    id: 3,
     title: 'GiftIt',
     description: 'Giftit is a webapp, which helps the user select the right gift, create events and invite friends to them and make use of the birthday calendar feature.  ',
     image: [giftit4, giftit5],
@@ -38,7 +38,7 @@ export const projectsDb = [
     tag: "Ruby / Rails"
   },
   {
-    id: '4',
+    id: 4,
     title: 'GiftIt',
     description: 'Giftit is a webapp, which helps the user select the right gift, create events and invite friends to them and make use of the birthday calendar feature.  ',
     image: [giftit4, giftit5],
@@ -48,7 +48,7 @@ export const projectsDb = [
     tag: "JavaScript"
   },
   {
-    id: '5',
+    id: 5,
     title: 'GiftIt',
     description: 'Giftit is a webapp, which helps the user select the right gift, create events and invite friends to them and make use of the birthday calendar feature.  ',
     image: [giftit1, giftit2, giftit3],
@@ -58,7 +58,7 @@ export const projectsDb = [
     tag: "JavaScript"
   },
   {
-    id: '6',
+    id: 6,
     title: 'AsfaltingLtd',
     description: 'Website for the road construction company asfalting ltd',
     image: [giftit4, giftit5],
@@ -68,7 +68,7 @@ export const projectsDb = [
     tag: "React"
   },
   {
-    id: '7',
+    id: 7,
     title: 'GiftIt',
     description: 'Giftit is a webapp, which helps the user select the right gift, create events and invite friends to them and make use of the birthday calendar feature.  ',
     image: [giftit4, giftit5],
@@ -78,7 +78,7 @@ export const projectsDb = [
     tag: "Ruby / Rails"
   },
   {
-    id: '8',
+    id: 8,
     title: 'GiftIt',
     description: 'Giftit is a webapp, which helps the user select the right gift, create events and invite friends to them and make use of the birthday calendar feature.  ',
     image: [giftit4, giftit5],

@@ -33,6 +33,7 @@
   display: block;
   object-fit: contain;
 }
+
 /* Right Side */
 
 .single--project--right {
@@ -46,9 +47,15 @@
   cursor: pointer;
   flex-basis: 10%;
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
+  margin-right: 4rem;
 }
+
+.arrow--right--svg:hover path{
+  fill: #FFBA2F;
+}
+
 /* Tools */
 
 .tools--container {
@@ -78,6 +85,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   align-items: center;
+  margin-bottom: 2rem;
 }
 
 .project--images--one--img {
