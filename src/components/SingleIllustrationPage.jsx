@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom'
 // import { projectsDb } from '../helpers/projectsDb'
 import '../style/SingleProjectPage.css'
 import { ReactComponent as RightArrow } from '../images/right--arrow.svg'
+import { ReactComponent as LeftArrow } from '../images/left--arrow.svg'
 import { illustrationDb } from '../helpers/illustrationDb'
 
 
@@ -10,12 +11,36 @@ function SingleProjectPage() {
 
   const { id } = useParams()
   const [illustrationId, setillustrationId] = useState(parseInt(id))
-
+  const [activeImageIndex, setActiveImageIndex] = useState(0)
 
   const singleIllustration = illustrationDb.find(illustration => illustration.id === illustrationId)
 
-  const handleLinkClick = () => {
-    setillustrationId(prevId => prevId + 1)
+  const handleNextClick = () => {
+    const nextId = illustrationId + 1;
+    if (nextId <= illustrationDb.length) {
+      setillustrationId(nextId);
+      setActiveImageIndex(0); // Reset active image index when navigating to a new illustration
+    }
+  };
+
+  const handlePreviousClick = () => {
+    const previousId = illustrationId - 1;
+    if (previousId >= 1) {
+      setillustrationId(previousId);
+      setActiveImageIndex(0); // Reset active image index when navigating to a new illustration
+    }
+  };
+
+  // const handleLinkClick = () => {
+  //   const nextId = illustrationId + 1;
+  //   if (nextId <= illustrationDb.length) {
+  //     setillustrationId(nextId);
+  //     setActiveImageIndex(0); // Reset active image index when navigating to a new illustration
+  //   }
+  // };
+
+  const handleImageClick = (index) => {
+    setActiveImageIndex(index)
   }
 
   return (
@@ -23,16 +48,34 @@ function SingleProjectPage() {
       {/* Top Side */}
       <div className="top--side">
         {/* Left Side */}
+        <div className="arrow--left">
+            {illustrationId !== 1 && (
+              <Link to={`/illustration/${singleIllustration.id}`} onClick={handlePreviousClick}>
+                <LeftArrow className="arrow--left--svg" />
+              </Link>
+            )}
+          </div>
         <div className="single--project--left">
-            <img className="single--project--img" src={ singleIllustration.image[0]} alt="test" />
+            <img
+            className="single--project--img"
+            src={ singleIllustration.image[activeImageIndex]}
+            alt="test" />
         </div>
         {/* Right Side */}
         <div className="single--project--right">
-            <div  className='arrow--right'>
+            {/* {illustrationId !== illustrationDb.length && (
               <Link to={`/illustration/${singleIllustration.id}`} onClick={handleLinkClick}>
-                <RightArrow className='arrow--right--svg'/>
+                <RightArrow className="arrow--right--svg" />
               </Link>
-            </div>
+            )} */}
+
+          <div className="arrow--right">
+            {illustrationId !== illustrationDb.length && (
+              <Link to={`/illustration/${singleIllustration.id}`} onClick={handleNextClick}>
+                <RightArrow className="arrow--right--svg" />
+              </Link>
+            )}
+          </div>
           <div className="project--info--container">
             <div>
               <h2 className='project--title'>{singleIllustration.title}</h2>
@@ -52,13 +95,23 @@ function SingleProjectPage() {
         </div>
       </div>
       {/* Bottom Side Gallery */}
-      <div className="bottom--side">
-        {singleIllustration.image.map((singleImage, index) => (
-          <div className="project--images--one">
-            <img className='project--images--one--img' key={index} src={singleImage} alt="" />
-          </div>
-        ))}
-      </div>
+      {singleIllustration.image.length > 1 && (
+        <div className="bottom--side">
+          {singleIllustration.image.map((singleImage, index) => (
+            <div
+              className="project--images--one"
+              key={index}
+              onClick={() => handleImageClick(index)}
+            >
+              <img
+                className={`project--images--one--img ${
+                activeImageIndex === index ? 'active' : ''}`
+              }
+              src={singleImage} alt="" />
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   )
 }

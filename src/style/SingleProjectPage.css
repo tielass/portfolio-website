@@ -12,7 +12,7 @@
 .top--side{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 /* Left Side */
@@ -90,4 +90,5 @@
 
 .project--images--one--img {
   width: 200px;
+  cursor: pointer;
 }
