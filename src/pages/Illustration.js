@@ -26,7 +26,7 @@ function Illustration() {
           <FilterButton name='Character' tagActive={tag === 'Character' ? true : false} handleSetTag={ setTag }/>
         </li>
         <li className="project--filter--item">
-          <FilterButton name='UI / UX' tagActive={tag === 'UI / UX' ? true : false} handleSetTag={ setTag }/>
+          <FilterButton name='GUI' tagActive={tag === 'GUI' ? true : false} handleSetTag={ setTag }/>
         </li>
         <li className="project--filter--item">
           <FilterButton name='Game Asset' tagActive={tag === 'Game Asset' ? true : false} handleSetTag={ setTag }/>

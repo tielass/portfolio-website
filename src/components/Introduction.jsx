@@ -12,9 +12,7 @@ function Introduction() {
       <div className="intro--content">
         <div className="intro--info--container">
           <h1 className='intro--heading'><span className='yellow'>Mihail</span> <br></br> Mihaylov</h1>
-          <p>I'm a Front-End Developer for  in Los Angeles, CA.
-          I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
-          Let's make something special.</p>
+          <p>I am a dedicated and results-driven professional who embarked on my career journey as a Frontend Engineer with unwavering passion and commitment. </p>
           <div className="social--media--intro">
             <Link><GitHubIcon></GitHubIcon></Link>
             <Link><InstagramIcon></InstagramIcon></Link>
