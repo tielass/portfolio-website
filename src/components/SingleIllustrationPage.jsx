@@ -49,33 +49,27 @@ function SingleProjectPage() {
       <div className="top--side">
         {/* Left Side */}
         <div className="arrow--left">
-            {illustrationId !== 1 && (
-              <Link to={`/illustration/${singleIllustration.id}`} onClick={handlePreviousClick}>
-                <LeftArrow className="arrow--left--svg" />
-              </Link>
-            )}
-          </div>
+          {illustrationId !== 1 && (
+            <Link to={`/illustration/${singleIllustration.id}`} onClick={handlePreviousClick}>
+              <LeftArrow className="arrow--left--svg" />
+            </Link>
+          )}
+        </div>
         <div className="single--project--left">
             <img
             className="single--project--img"
             src={ singleIllustration.image[activeImageIndex]}
             alt="test" />
         </div>
+        <div className="arrow--right">
+          {illustrationId !== illustrationDb.length && (
+            <Link to={`/illustration/${singleIllustration.id}`} onClick={handleNextClick}>
+              <RightArrow className="arrow--right--svg" />
+            </Link>
+          )}
+        </div>
         {/* Right Side */}
         <div className="single--project--right">
-            {/* {illustrationId !== illustrationDb.length && (
-              <Link to={`/illustration/${singleIllustration.id}`} onClick={handleLinkClick}>
-                <RightArrow className="arrow--right--svg" />
-              </Link>
-            )} */}
-
-          <div className="arrow--right">
-            {illustrationId !== illustrationDb.length && (
-              <Link to={`/illustration/${singleIllustration.id}`} onClick={handleNextClick}>
-                <RightArrow className="arrow--right--svg" />
-              </Link>
-            )}
-          </div>
           <div className="project--info--container">
             <div>
               <h2 className='project--title'>{singleIllustration.title}</h2>

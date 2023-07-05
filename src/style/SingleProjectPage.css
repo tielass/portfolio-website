@@ -24,7 +24,7 @@
   border-radius: 6px;
   flex-basis: 60%;
   position: relative;
-  max-height: 500px;
+  height: 500px;
 }
 
 .single--project--img{
@@ -42,6 +42,8 @@
   text-align: center;
 }
 
+/* Arrows */
+
 .arrow--right {
   scale: 0.8;
   cursor: pointer;
@@ -54,6 +56,15 @@
 
 .arrow--right--svg:hover path{
   fill: #FFBA2F;
+}
+
+.arrow--left {
+  scale: 0.8;
+  cursor: pointer;
+  flex-basis: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Tools */
@@ -85,7 +96,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   align-items: center;
-  margin-bottom: 2rem;
+  margin: 1rem 3rem 2rem 6rem;
 }
 
 .project--images--one--img {

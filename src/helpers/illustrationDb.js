@@ -18,7 +18,7 @@ export const illustrationDb = [
   {
     id: 1,
     title: 'Cutillus Corammand',
-    description: 'Cutillus Coramand, the indomitable captain of the infamous vessel "Empty Hand," casts a foreboding shadow upon the treacherous seas. Known far and wide for his audacious exploits and his merciless pursuit of ill-gotten gains, his name strikes fear into the hearts of both commoners and crowned heads alike. Legends tell of the ill-fated encounter with King Esleys wounded ship, where his crews greedy ambitions were met with a swift and resounding defeat, forever branding the captain and his ship with the moniker that serves as a haunting reminder of their folly. Yet, Cutillus, a figure shrouded in equal parts mystery and infamy, sails on, his eyes firmly fixed on the glittering horizon, ever ready to seize the next opportunity for plunder and retribution.',
+    description: 'Cutillus Coramand, the indomitable captain of the infamous vessel "Empty Hand," casts a foreboding shadow upon the treacherous seas. Known far and wide for his audacious exploits and his merciless pursuit of ill-gotten gains, his name strikes fear into the hearts of both commoners and crowned heads alike. Legends tell of the ill-fated encounter with King Esleys wounded ship, where his crews greedy ambitions were met with a swift and resounding defeat, forever branding the captain and his ship with the moniker that serves as a haunting reminder of their folly. ',
     image: [Cutillus],
     type: "Character Design",
     skills: ['Illustration', '2D Art', 'Character design', 'Procreate', 'Concept Art'],
