@@ -54,7 +54,9 @@
   margin-right: 4rem;
 }
 
-.arrow--right--svg:hover path{
+.arrow--right--svg:hover path,
+.arrow--left--svg:hover path
+{
   fill: #FFBA2F;
 }
 

@@ -37,6 +37,7 @@ function SingleProjectPage() {
             <div>
               <h2 className='project--title'>{singleProject.title}</h2>
               <p className='project--description'>{singleProject.description}</p>
+              <Link to={singleProject.url} target="_blank"><p>{singleProject.url}</p></Link>
             </div>
             <div className="tools--container">
               <h2 className="tools--heading">Tools Used</h2>

@@ -28,8 +28,8 @@ export const projectsDb = [
     description: 'Website for the road construction and maintenance company Asfalting Ltd',
     image: [Asfalting1, Asfalting2, Asfalting3, Asfalting4, Asfalting5],
     type: "front-end",
-    skills: ['react', 'javascript', 'webapp design', 'figma', 'HTML & CSS', 'react-router-dom'],
-    url: 'https://www.giftit.one/',
+    skills: ['React', 'Javascript', 'Webapp design', 'Figma', 'HTML & CSS', 'react-router-dom'],
+    url: 'https://asfaltingltd.netlify.app/',
     tag: "React"
   },
 ]

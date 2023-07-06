@@ -19,7 +19,7 @@ function SingleProjectPage() {
     const nextId = illustrationId + 1;
     if (nextId <= illustrationDb.length) {
       setillustrationId(nextId);
-      setActiveImageIndex(0); // Reset active image index when navigating to a new illustration
+      setActiveImageIndex(0);
     }
   };
 
@@ -27,17 +27,10 @@ function SingleProjectPage() {
     const previousId = illustrationId - 1;
     if (previousId >= 1) {
       setillustrationId(previousId);
-      setActiveImageIndex(0); // Reset active image index when navigating to a new illustration
+      setActiveImageIndex(0); 
     }
   };
 
-  // const handleLinkClick = () => {
-  //   const nextId = illustrationId + 1;
-  //   if (nextId <= illustrationDb.length) {
-  //     setillustrationId(nextId);
-  //     setActiveImageIndex(0); // Reset active image index when navigating to a new illustration
-  //   }
-  // };
 
   const handleImageClick = (index) => {
     setActiveImageIndex(index)
