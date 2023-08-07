@@ -32,4 +32,24 @@ export const projectsDb = [
     url: 'https://asfaltingltd.netlify.app/',
     tag: "React"
   },
+  {
+    id: 3,
+    title: 'LonelyFans',
+    description: 'Website for the road construction and maintenance company Asfalting Ltd',
+    image: [Asfalting1, Asfalting2, Asfalting3, Asfalting4, Asfalting5],
+    type: "front-end",
+    skills: ['React', 'Javascript', 'Webapp design', 'Figma', 'HTML & CSS', 'react-router-dom'],
+    url: 'https://asfaltingltd.netlify.app/',
+    tag: "React"
+  },
+  {
+    id: 4,
+    title: 'LonelyFans',
+    description: 'Website for the road construction and maintenance company Asfalting Ltd',
+    image: [Asfalting1, Asfalting2, Asfalting3, Asfalting4, Asfalting5],
+    type: "front-end",
+    skills: ['React', 'Javascript', 'Webapp design', 'Figma', 'HTML & CSS', 'react-router-dom'],
+    url: 'https://asfaltingltd.netlify.app/',
+    tag: "React"
+  },
 ]

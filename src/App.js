@@ -9,11 +9,13 @@ import Visualdesign from './pages/Visualdesign'
 import Home from './pages/Home'
 import SingleProjectPage from './components/SingleProjectPage'
 import SingleIllustrationPage from './components/SingleIllustrationPage'
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path='/' exact element={<Home />} />
