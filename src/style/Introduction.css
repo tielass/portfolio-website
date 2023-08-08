@@ -67,6 +67,7 @@ h1:hover::after {
   color: #FFBA2F;
 }
 
+/* Contact me button */
 
 .contact--me {
   width: 100%;
@@ -81,7 +82,6 @@ h1:hover::after {
 
 .contact--me:hover{
   border: 2px solid #FFBA2F;
-  color: #FFBA2F;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -96,4 +96,8 @@ h1:hover::after {
 .contact--me--link {
   text-decoration: none;
   color: #fff;
+}
+
+.contact--me--link:hover {
+  color: #FFBA2F;
 }

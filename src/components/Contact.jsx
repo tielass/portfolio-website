@@ -1,26 +1,27 @@
-import React  from 'react'
-// import emailjs from '@emailjs/browser';
+import React, { useRef, useState }  from 'react'
+import emailjs from '@emailjs/browser';
 import '../style/Contact.css'
 
 function Contact() {
-  // const form = useRef();
+  const form = useRef();
+  const [isSuccessMessageVisible, setIsSuccessMessageVisible] = useState(false)
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-  //   emailjs.sendForm('service_hu7w363', 'template_a2ff4eb', form.current, 'CfOrMmS_-3xan4S9E')
-  //     .then((result) => {
-  //         console.log(result.text);
-  //     }, (error) => {
-  //         console.log(error.text);
-  //     });
-  //     e.target.reset()
-  //   };
+    emailjs.sendForm('service_1oe9mqd', 'template_ejci9uj', form.current, 'CfOrMmS_-3xan4S9E')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset()
+    };
 
   return (
     <div className='contact--container' id='contact--container'>
       <h2 className="contact--heading">Have a question or want to work together?</h2>
-      <form className='contact--form'>
+      <form className='contact--form' ref={form} onSubmit={sendEmail}>
         <label htmlFor="user_name" className='form--label'>Name</label>
         <input className='form--input' type="text" name='user_name' required/>
         <label htmlFor="user_email" className='form--label'>E-mail</label>
