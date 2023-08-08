@@ -84,3 +84,16 @@ h1:hover::after {
   color: #FFBA2F;
   background-color: rgba(255, 255, 255, 0.1);
 }
+
+.social--media--art{
+  scale: 0.8;
+}
+
+.social--media--art:hover path {
+  fill: #FFBA2F;
+}
+
+.contact--me--link {
+  text-decoration: none;
+  color: #fff;
+}

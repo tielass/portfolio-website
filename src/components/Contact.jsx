@@ -18,7 +18,7 @@ function Contact() {
   //   };
 
   return (
-    <div className='contact--container'>
+    <div className='contact--container' id='contact--container'>
       <h2 className="contact--heading">Have a question or want to work together?</h2>
       <form className='contact--form'>
         <label htmlFor="user_name" className='form--label'>Name</label>

@@ -12,10 +12,18 @@
 }
 
 .footer .social--media a{
-  color: #F0AD2C;
+  color: #000;
   margin: auto 2rem;
 }
 
 .footer .social--media a:hover {
-  color: #000;
+  color: #F0AD2C;
+}
+
+.social--media--art--footer path{
+  scale: 0.8;
+}
+
+.social--media--art--footer:hover path {
+  fill: #FFBA2F;
 }
