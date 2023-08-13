@@ -12,6 +12,10 @@ function Contact() {
     emailjs.sendForm('service_1oe9mqd', 'template_ejci9uj', form.current, 'CfOrMmS_-3xan4S9E')
       .then((result) => {
           console.log(result.text);
+          setIsSuccessMessageVisible(true); // Show success message
+          setTimeout(() => {
+            setIsSuccessMessageVisible(false); // Hide success message after a few seconds
+        }, 3000);
       }, (error) => {
           console.log(error.text);
       });
@@ -30,6 +34,9 @@ function Contact() {
         <textarea name="message" id=""  rows="15" className='contact--textarea'></textarea>
         <button className='contact--button' type='submit' >SUBMIT</button>
       </form>
+      {isSuccessMessageVisible && (
+        <div className='success-message'>Message has been sent successfully!</div>
+      )}
     </div>
   )
 }
