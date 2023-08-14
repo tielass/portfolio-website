@@ -5,6 +5,7 @@ import JavascriptIcon from '@mui/icons-material/Javascript';
 import DrawIcon from '@mui/icons-material/Draw';
 import DesignServicesOutlinedIcon from '@mui/icons-material/DesignServicesOutlined';
 import ColorLensOutlinedIcon from '@mui/icons-material/ColorLensOutlined';
+import { softwareSkills } from '../helpers/softwareSkills'
 
 function Skills() {
 
@@ -15,7 +16,7 @@ function Skills() {
   }, []);
 
   const testData = [
-    { bgcolor: "#FFC221", completed: 60 },
+    { bgcolor: "#FFC221", completed: 90, skill: 'React'},
     { bgcolor: "#FFC221", completed: 30 },
     { bgcolor: "#FFC221", completed: 53 },
     { bgcolor: "#FFC221", completed: 23 },
@@ -37,8 +38,8 @@ function Skills() {
             </div>
           </div>
           <div className="skills--progress">
-            {testData.map((item, idx) => (
-              <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
+            {softwareSkills.map((item, idx,) => (
+              <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} skill={item.skill}/>
             ))}
           </div>
         </div>
