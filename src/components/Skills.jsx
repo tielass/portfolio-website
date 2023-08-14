@@ -6,6 +6,9 @@ import DrawIcon from '@mui/icons-material/Draw';
 import DesignServicesOutlinedIcon from '@mui/icons-material/DesignServicesOutlined';
 import ColorLensOutlinedIcon from '@mui/icons-material/ColorLensOutlined';
 import { softwareSkills } from '../helpers/softwareSkills'
+import { illustrationSkills } from '../helpers/illustrationSkills'
+import { uiuxSkills } from '../helpers/uiuxSkills'
+import { visualDesignSkills } from '../helpers/visualDesignSkills'
 
 function Skills() {
 
@@ -15,13 +18,6 @@ function Skills() {
     setInterval(() => setCompleted(Math.floor(Math.random() * 100) + 1), 2000);
   }, []);
 
-  const testData = [
-    { bgcolor: "#FFC221", completed: 90, skill: 'React'},
-    { bgcolor: "#FFC221", completed: 30 },
-    { bgcolor: "#FFC221", completed: 53 },
-    { bgcolor: "#FFC221", completed: 23 },
-    { bgcolor: "#FFC221", completed: 13 },
-  ];
 
   return (
     <div className='skills'>
@@ -48,13 +44,13 @@ function Skills() {
           <div className="black--square">
             <div className="black--square--info">
               <DrawIcon className='draw--icon'/>
-              <h3 className='custom--skill--header'>UI / UX</h3>
+              <h3 className='custom--skill--header'>Illustration</h3>
               <p className='custom--skill--text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
           </div>
           <div className="skills--progress">
-            {testData.map((item, idx) => (
-              <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
+            {illustrationSkills.map((item, idx) => (
+              <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} skill={item.skill}/>
             ))}
           </div>
         </div>
@@ -63,13 +59,13 @@ function Skills() {
           <div className="black--square">
             <div className="black--square--info">
               <ColorLensOutlinedIcon className='illustration--icon'/>
-              <h3 className='custom--skill--header'>Illustration</h3>
+              <h3 className='custom--skill--header'>UI / UX</h3>
               <p className='custom--skill--text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
           </div>
           <div className="skills--progress">
-            {testData.map((item, idx) => (
-              <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
+            {uiuxSkills.map((item, idx) => (
+              <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} skill={item.skill}/>
             ))}
           </div>
         </div>
@@ -83,8 +79,8 @@ function Skills() {
             </div>
           </div>
           <div className="skills--progress">
-            {testData.map((item, idx) => (
-              <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} />
+            {visualDesignSkills.map((item, idx) => (
+              <ProgressBar key={idx} bgcolor={item.bgcolor} completed={item.completed} skill={item.skill}/>
             ))}
           </div>
         </div>
