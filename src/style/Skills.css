@@ -73,3 +73,35 @@
   font-size: 10px;
   padding: 0 20px;
 }
+
+/* Progress Bar */
+
+.progress--bar--wrapper {
+  height: 25px;
+  background-color: #e0e0de;
+  margin-top: 14px;
+  border-radius: 6px;
+}
+
+.progress--bar--container {
+  height: 100%;
+  border-radius: inherit;
+  text-align: right;
+  animation: fillAnimation 2s ease-in-out;
+}
+
+@keyframes fillAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--completed, 0%);
+  }
+}
+
+.progress--bar--skill,
+.progress--bar--completed{
+  padding: 8px;
+  color: #000;
+  font-weight: bold;
+}
