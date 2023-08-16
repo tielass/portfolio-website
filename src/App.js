@@ -10,6 +10,7 @@ import Home from './pages/Home'
 import SingleProjectPage from './components/SingleProjectPage'
 import SingleIllustrationPage from './components/SingleIllustrationPage'
 import ScrollToTop from './components/ScrollToTop';
+import SingleVisualDesignPage from './components/SingleVisualDesignPage';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/visualdesign/" exact element = { <Visualdesign /> } />
           <Route path="/development/:id" exact element = { <SingleProjectPage /> } />
           <Route path="/illustration/:id" exact element = { <SingleIllustrationPage /> } />
+          <Route path="/visualdesign/:id" exact element = { <SingleVisualDesignPage /> } />
         </Routes>
         <Footer />
       </Router>
