@@ -1,10 +1,9 @@
 import React,  {useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
-// import { projectsDb } from '../helpers/projectsDb'
-import '../style/SingleProjectPage.css'
 import { ReactComponent as RightArrow } from '../images/right--arrow.svg'
 import { ReactComponent as LeftArrow } from '../images/left--arrow.svg'
 import { illustrationDb } from '../helpers/illustrationDb'
+import '../style/SingleProjectPage.css'
 
 
 function SingleProjectPage() {
@@ -27,7 +26,7 @@ function SingleProjectPage() {
     const previousId = illustrationId - 1;
     if (previousId >= 1) {
       setillustrationId(previousId);
-      setActiveImageIndex(0); 
+      setActiveImageIndex(0);
     }
   };
 

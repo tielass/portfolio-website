@@ -1,21 +1,38 @@
 import React,  {useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
+import { ReactComponent as RightArrow } from '../images/right--arrow.svg'
+import { ReactComponent as LeftArrow } from '../images/left--arrow.svg'
 import { projectsDb } from '../helpers/projectsDb'
 import '../style/SingleProjectPage.css'
-import { ReactComponent as RightArrow } from '../images/right--arrow.svg'
-// import { illustrationDb } from '../helpers/illustrationDb'
 
 
 function SingleProjectPage() {
 
   const { id } = useParams()
   const [projectId, setProjectId] = useState(parseInt(id))
-
+  const [activeProjectIndex, setActiveProjectIndex] = useState(0)
 
   const singleProject = projectsDb.find(project => project.id === projectId)
 
-  const handleLinkClick = () => {
-    setProjectId(prevId => prevId + 1)
+  const handleNextClick = () => {
+    // setProjectId(prevId => prevId + 1)
+    const nextId = projectId + 1;
+    if (nextId <= projectsDb.length) {
+      setProjectId(nextId);
+      setActiveProjectIndex(0);
+    }
+  }
+
+  const handlePreviousClick = () => {
+    const previousId = projectId - 1;
+    if (previousId >= 1) {
+      setProjectId(previousId);
+      setActiveProjectIndex(0)
+    }
+  }
+
+  const handleProjectClick = (index) => {
+    setActiveProjectIndex(index)
   }
 
   return (
@@ -23,16 +40,26 @@ function SingleProjectPage() {
       {/* Top Side */}
       <div className="top--side">
         {/* Left Side */}
-        <div className="single--project--left">
-            <img className="single--project--img" src={ singleProject.image[1]} alt="test" />
+        <div className="arrow--left">
+          {projectId !== 1 && (
+            <Link to={`/development/${singleProject.id}`} onClick={handlePreviousClick}>
+              <LeftArrow className="arrow--left--svg" />
+            </Link>
+          )}
         </div>
-        {/* Right Side */}
-        <div className="single--project--right">
+        <div className="single--project--left">
+            <img
+            className="single--project--img"
+            src={ singleProject.image[activeProjectIndex]}
+            alt="test" />
+        </div>
             <div  className='arrow--right'>
-              <Link to={`/development/${singleProject.id}`} onClick={handleLinkClick}>
+              <Link to={`/development/${singleProject.id}`} onClick={handleNextClick}>
                 <RightArrow className='arrow--right--svg'/>
               </Link>
             </div>
+        {/* Right Side */}
+        <div className="single--project--right">
           <div className="project--info--container">
             <div>
               <h2 className='project--title'>{singleProject.title}</h2>
@@ -52,14 +79,26 @@ function SingleProjectPage() {
           </div>
         </div>
       </div>
+
       {/* Bottom Side Gallery */}
-      <div className="bottom--side">
-        {singleProject.image.slice(1).map((singleImage, index) => (
-          <div className="project--images--one">
-            <img className='project--images--one--img' key={index} src={singleImage} alt="" />
-          </div>
-        ))}
-      </div>
+      {singleProject.image.length > 1 && (
+        <div className="bottom--side">
+          {singleProject.image.map((singleProjectImage, index) => (
+            <div
+              className="project--images--one"
+              key={index}
+              onClick={() => handleProjectClick(index)}
+            >
+              <img
+                className={`project--images--one--img ${
+                activeProjectIndex === index ? 'active' : ''}`
+              }
+              src={singleProjectImage} alt="" />
+            </div>
+          ))}
+        </div>
+      )}
+
     </div>
   )
 }
