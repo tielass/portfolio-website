@@ -2,30 +2,30 @@ import React,  {useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { ReactComponent as RightArrow } from '../images/right--arrow.svg'
 import { ReactComponent as LeftArrow } from '../images/left--arrow.svg'
-import { illustrationDb } from '../helpers/illustrationDb'
+import { visualDesignDb } from '../helpers/visualDesignDb'
 import '../style/SingleProjectPage.css'
 
 
 function SingleVisualDesignPage() {
 
   const { id } = useParams()
-  const [illustrationId, setillustrationId] = useState(parseInt(id))
+  const [visualDesignId, setvisualDesignId] = useState(parseInt(id))
   const [activeImageIndex, setActiveImageIndex] = useState(0)
 
-  const singleIllustration = illustrationDb.find(illustration => illustration.id === illustrationId)
+  const singleIllustration = visualDesignDb.find(illustration => illustration.id === visualDesignId)
 
   const handleNextClick = () => {
-    const nextId = illustrationId + 1;
-    if (nextId <= illustrationDb.length) {
-      setillustrationId(nextId);
+    const nextId = visualDesignId + 1;
+    if (nextId <= visualDesignDb.length) {
+      setvisualDesignId(nextId);
       setActiveImageIndex(0);
     }
   };
 
   const handlePreviousClick = () => {
-    const previousId = illustrationId - 1;
+    const previousId = visualDesignId - 1;
     if (previousId >= 1) {
-      setillustrationId(previousId);
+      setvisualDesignId(previousId);
       setActiveImageIndex(0);
     }
   };
@@ -41,7 +41,7 @@ function SingleVisualDesignPage() {
       <div className="top--side">
         {/* Left Side */}
         <div className="arrow--left">
-          {illustrationId !== 1 && (
+          {visualDesignId !== 1 && (
             <Link to={`/illustration/${singleIllustration.id}`} onClick={handlePreviousClick}>
               <LeftArrow className="arrow--left--svg" />
             </Link>
@@ -54,7 +54,7 @@ function SingleVisualDesignPage() {
             alt="test" />
         </div>
         <div className="arrow--right">
-          {illustrationId !== illustrationDb.length && (
+          {visualDesignId !== visualDesignDb.length && (
             <Link to={`/illustration/${singleIllustration.id}`} onClick={handleNextClick}>
               <RightArrow className="arrow--right--svg" />
             </Link>
