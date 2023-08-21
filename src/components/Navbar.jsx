@@ -2,8 +2,13 @@ import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import Switch from '@mui/material/Switch';
 import '../style/Navbar.css'
+import { useContext } from 'react'
+import { ThemeContext } from '../contexts/ThemeContext'
 
-function navbar() {
+function Navbar() {
+
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
   return (
     <div className='navbar'>
       <div className="left--side">
@@ -19,10 +24,12 @@ function navbar() {
         <NavLink className='navbar--link' to='/uiux'>UI/UX</NavLink>
         <NavLink className='navbar--link' to='/visualdesign'>Visual Design</NavLink>
         <Switch
+        checked={ theme === 'dark' }
+        onChange={ toggleTheme }
         color='warning'/>
       </div>
     </div>
   )
 }
 
-export default navbar
+export default Navbar

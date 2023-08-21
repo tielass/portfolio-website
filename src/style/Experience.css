@@ -57,3 +57,19 @@
 .date.vertical-timeline-element-date{
   font-weight: bold;
 }
+
+/* Dark Theme */
+
+#dark .experience {
+  background-color: #34353A;
+  color: #fff;
+}
+
+#dark .experience h2 {
+  color: #fff;
+}
+
+
+#dark .experience .vertical-timeline-element-content.bounce-in {
+  background-color: #6b6d77;
+}

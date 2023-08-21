@@ -20,16 +20,16 @@ function Projects() {
     <div className='projects'>
       <h2 className="projects--heading">Projects</h2>
       <ul className="projects--filter">
-        <li className="project--filter--item">
+        <li className="project--filter--item" key='1'>
           <FilterButton name='All' tagActive={tag === 'All' ? true : false} handleSetTag={ setTag }/>
         </li>
-        <li className="project--filter--item">
+        <li className="project--filter--item" key='2'>
           <FilterButton name='React' tagActive={tag === 'React' ? true : false} handleSetTag={ setTag }/>
         </li>
-        <li className="project--filter--item">
+        <li className="project--filter--item" key='3'>
           <FilterButton name='Ruby / Rails' tagActive={tag === 'Ruby / Rails' ? true : false} handleSetTag={ setTag }/>
         </li>
-        <li className="project--filter--item">
+        <li className="project--filter--item" key='4'>
           <FilterButton name='JavaScript' tagActive={tag === 'JavaScript' ? true : false} handleSetTag={ setTag }/>
         </li>
       </ul>

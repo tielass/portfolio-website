@@ -101,3 +101,9 @@ h1:hover::after {
 .contact--me--link:hover {
   color: #FFBA2F;
 }
+
+/* Dark Theme */
+
+#dark .intro--heading p {
+  color: red;
+}

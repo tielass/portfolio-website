@@ -15,3 +15,9 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Dark Theme */
+
+#dark .App {
+  background-color: #2A2B32;
+}
