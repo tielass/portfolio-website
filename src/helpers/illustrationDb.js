@@ -13,6 +13,25 @@ import Degir1 from '../images/illustrationImages/mihail-mihaylov-degir-concepts.
 import Degir2 from '../images/illustrationImages/mihail-mihaylov-degir-concepts-02.jpg'
 import Fiora from '../images/illustrationImages/mihail-mihaylov-dragonslayer-fiora.jpg'
 import Rhaela from '../images/illustrationImages/mihail-mihaylov-rhaela.jpg'
+import BakedHam from '../images/illustrationImages/baked-ham-mihaylov.jpg'
+import Bread from '../images/illustrationImages/bread-mihaylov.jpg'
+import ChickenLeg from '../images/illustrationImages/chicken-leg-mihaylov.jpg'
+import Emmental from '../images/illustrationImages/emmental-mihaylov.jpg'
+import Mushroom1 from '../images/illustrationImages/mushroom1-mihaylov.jpg'
+import Mushroom2 from '../images/illustrationImages/mushroom2-mihaylov.jpg'
+import RedMushroom from '../images/illustrationImages/redmushroom-mihaylov.jpg'
+import RedOnion from '../images/illustrationImages/red-onion-mihaylov.jpg'
+import Steak from '../images/illustrationImages/steak-mihaylov.jpg'
+import VegetableSoup from '../images/illustrationImages/vegetable-soup-mihaylov.jpg'
+import FantasyUI from '../images/illustrationImages/mihail-mihaylov-fantasy.jpg'
+import SciFiUI from '../images/illustrationImages/mihail-mihaylov-sci-fi.jpg'
+import CharacterDoodle1 from '../images/illustrationImages/character-doodle1-mihaylov.jpg'
+import CharacterDoodle2 from '../images/illustrationImages/character-doodle2-mihaylov.jpg'
+import CharacterDoodle3 from '../images/illustrationImages/character-doodle3-mihaylov.jpg'
+import CharacterDoodle4 from '../images/illustrationImages/character-doodle4-mihaylov.jpg'
+import CharacterDoodle5 from '../images/illustrationImages/character-doodle5-mihaylov.jpg'
+import CharacterDoodle6 from '../images/illustrationImages/character-doodle6-mihaylov.jpg'
+import CharacterDoodle7 from '../images/illustrationImages/character-doodle7-mihaylov.jpg'
 
 export const illustrationDb = [
   {
@@ -121,6 +140,46 @@ export const illustrationDb = [
     description: 'In a world ablaze with mystic wonders, an adventurous alchemist emerges from the shadows, her spirit aflame with a relentless pursuit of arcane secrets. With her satchel filled with vials and her eyes brimming with curiosity, she traverses untamed landscapes, unearthing rare herbs and exotic ingredients to fuel her daring transmutations. Guided by an insatiable hunger for knowledge, she dances on the precipice of discovery, forever driven to unlock the mysteries that lie hidden within the alchemical arts.',
     image: [Rhaela],
     type: "Character Design",
+    skills: ['Illustration', '2D Art', 'Character design', 'Photoshop'],
+    url: '',
+    tag: "Character"
+  },
+  {
+    id: 12,
+    title: 'Medieval Food',
+    description: '',
+    image: [VegetableSoup, BakedHam, Bread, ChickenLeg, Emmental, Mushroom1, Mushroom2, RedMushroom, RedOnion, Steak],
+    type: "Game Asset",
+    skills: ['Illustration', '2D Art', 'Game Asset', 'Photoshop', 'Icons'],
+    url: '',
+    tag: "Game Asset"
+  },
+  {
+    id: 13,
+    title: 'Fantasy Game UI',
+    description: '',
+    image: [FantasyUI],
+    type: "GUI",
+    skills: ['Illustration', '2D Art', 'User Interface', 'Photoshop', 'GUI'],
+    url: '',
+    tag: "GUI"
+  },
+  {
+    id: 14,
+    title: 'Sci-Fi UI',
+    description: '',
+    image: [SciFiUI],
+    type: "GUI",
+    skills: ['Illustration', '2D Art', 'User Interface', 'Photoshop', 'GUI'],
+    url: '',
+    tag: "GUI"
+  },
+  {
+    id: 15,
+    title: 'Character Doodles',
+    description: '',
+    image: [CharacterDoodle1, CharacterDoodle2, CharacterDoodle3, CharacterDoodle4, CharacterDoodle5, CharacterDoodle6, CharacterDoodle7],
+    type: "Character",
     skills: ['Illustration', '2D Art', 'Character design', 'Photoshop'],
     url: '',
     tag: "Character"
