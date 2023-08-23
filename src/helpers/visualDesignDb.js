@@ -85,7 +85,8 @@ export const visualDesignDb = [
     skills: ['Illustration', '2D Art', 'Character design', 'Procreate', 'Concept Art'],
     url: '',
     tag: "Logo"
-  }, {
+  },
+  {
     id: 8,
     title: 'Birds',
     description: ' ',

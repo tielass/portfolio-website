@@ -6,10 +6,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Lato;
-  background-color: #F6F6F6;
-  background: url('./images/lightmode-bg.svg');
-  background-repeat: no-repeat;
-  background-position: center top;
 }
 
 html {
@@ -28,8 +24,10 @@ html {
 
 /* Introduction */
 
-#dark .intro--container {
-  background-color: #2A2B32;
+#dark .intro--content {
+  background: url('./images/darkmode-bg.svg');
+  background-repeat: repeat;
+  background-position: center top;
 }
 
 #dark .intro--content {
@@ -77,3 +75,104 @@ html {
   background-color: #34353A;
 }
 
+/* Progress Bar */
+
+#dark .progress--bar--wrapper {
+  background-color: #a6a6a6;
+}
+
+/* Projects */
+
+#dark .projects {
+  background-color: #34353A;
+  background-image: url('./images/darkmode-bg2.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#dark .projects--heading,
+#dark .projects--filter .project--filter--item button {
+  color: #fff;
+}
+
+/* Hover dark */
+
+#dark .project--filter--item button:hover{
+  color: #FFBA2F;
+  font-weight: bold;
+}
+
+/* Active project dark */
+
+#dark .projects--filter .project--filter--item .active{
+  color: #FFBA2F;
+  font-weight: bold;
+}
+
+/* Cards */
+
+#dark .projects--card--link {
+  color: #fff;
+}
+
+/* Contact */
+
+#dark .contact--heading {
+  color: #fff;
+}
+
+#dark .contact--form .form--label{
+  color: #fff;
+}
+
+#dark .contact--form .form--input,
+#dark .contact--form .contact--textarea{
+  background-color: #46484E;
+}
+
+/* Footer */
+
+#dark .footer {
+  background-color: #212228;
+  color: #fff;
+}
+
+#dark .social--media a{
+  color: #FFBA2F;
+}
+
+#dark .social--media--art--footer path {
+  fill: #FFBA2F;
+}
+
+/* Footer links hover */
+
+#dark .footer .social--media a:hover {
+  color: #2A2B32;
+}
+
+#dark .social--media--art--footer:hover path {
+  fill: #2A2B32;
+}
+
+/* Single Page */
+
+#dark .single--page {
+  background-color: #2A2B32;
+  color: #fff;
+}
+
+#dark .project--tools .skill-tag{
+  color: #000;
+}
+
+#dark .arrow--right path,
+#dark .arrow--left path {
+  fill: #fff;
+}
+
+#dark .arrow--right--svg:hover path,
+#dark .arrow--left--svg:hover path
+{
+  fill: #FFBA2F;
+}

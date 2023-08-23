@@ -3,6 +3,10 @@
   padding: 5rem;
   display: flex;
   justify-content: center;
+  background-color: #F6F6F6;
+  background: url('../images/lightmode-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 /* Info Container */
@@ -101,4 +105,3 @@ h1:hover::after {
 .contact--me--link:hover {
   color: #FFBA2F;
 }
-

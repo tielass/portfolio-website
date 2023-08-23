@@ -1,7 +1,8 @@
 <svg width="1440" height="932" viewBox="0 0 1440 932" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_1530_12)">
-<path d="M1275.51 317.021L1330.02 183.17L1473.19 163.451L1561.86 277.584L1507.35 411.435L1364.17 431.153L1275.51 317.021Z" stroke="#34353A" stroke-opacity="0.5" stroke-width="50"/>
-<path d="M-129.789 482.103L40.5 383.787L210.789 482.103V678.736L40.5 777.052L-129.789 678.736V482.103Z" stroke="#34353A" stroke-opacity="0.5" stroke-width="50"/>
+<rect width="1440" height="932" fill="#2A2B32"/>
+<path d="M1275.51 317.021L1330.02 183.17L1473.19 163.452L1561.86 277.585L1507.35 411.435L1364.17 431.154L1275.51 317.021Z" stroke="#34353A" stroke-opacity="0.5" stroke-width="50"/>
+<path d="M-129.789 482.104L40.5 383.787L210.789 482.104V678.736L40.5 777.052L-129.789 678.736V482.104Z" stroke="#34353A" stroke-opacity="0.5" stroke-width="50"/>
 <path d="M383.351 172.592L411.961 120.035L471.782 118.534L502.992 169.59L474.381 222.146L414.561 223.647L383.351 172.592Z" stroke="#34353A" stroke-opacity="0.3" stroke-width="15"/>
 </g>
 <defs>

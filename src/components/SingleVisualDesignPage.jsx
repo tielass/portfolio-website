@@ -12,7 +12,7 @@ function SingleVisualDesignPage() {
   const [visualDesignId, setvisualDesignId] = useState(parseInt(id))
   const [activeImageIndex, setActiveImageIndex] = useState(0)
 
-  const singleIllustration = visualDesignDb.find(illustration => illustration.id === visualDesignId)
+  const singleVisualDesign = visualDesignDb.find(visualDesign => visualDesign.id === visualDesignId)
 
   const handleNextClick = () => {
     const nextId = visualDesignId + 1;
@@ -42,7 +42,7 @@ function SingleVisualDesignPage() {
         {/* Left Side */}
         <div className="arrow--left">
           {visualDesignId !== 1 && (
-            <Link to={`/illustration/${singleIllustration.id}`} onClick={handlePreviousClick}>
+            <Link to={`/visualdesign/${singleVisualDesign.id}`} onClick={handlePreviousClick}>
               <LeftArrow className="arrow--left--svg" />
             </Link>
           )}
@@ -50,12 +50,12 @@ function SingleVisualDesignPage() {
         <div className="single--project--left">
             <img
             className="single--project--img"
-            src={ singleIllustration.image[activeImageIndex]}
+            src={ singleVisualDesign.image[activeImageIndex]}
             alt="test" />
         </div>
         <div className="arrow--right">
           {visualDesignId !== visualDesignDb.length && (
-            <Link to={`/illustration/${singleIllustration.id}`} onClick={handleNextClick}>
+            <Link to={`/visualdesign/${singleVisualDesign.id}`} onClick={handleNextClick}>
               <RightArrow className="arrow--right--svg" />
             </Link>
           )}
@@ -64,13 +64,13 @@ function SingleVisualDesignPage() {
         <div className="single--project--right">
           <div className="project--info--container">
             <div>
-              <h2 className='project--title'>{singleIllustration.title}</h2>
-              <p className='project--description'>{singleIllustration.description}</p>
+              <h2 className='project--title'>{singleVisualDesign.title}</h2>
+              <p className='project--description'>{singleVisualDesign.description}</p>
             </div>
             <div className="tools--container">
               <h2 className="tools--heading">Tools Used</h2>
               <ul className="tools">
-                {singleIllustration.skills.map((skill) => (
+                {singleVisualDesign.skills.map((skill) => (
                   <div className="project--tools">
                     <li className='skill-tag'>{skill}</li>
                   </div>
@@ -81,9 +81,9 @@ function SingleVisualDesignPage() {
         </div>
       </div>
       {/* Bottom Side Gallery */}
-      {singleIllustration.image.length > 1 && (
+      {singleVisualDesign.image.length > 1 && (
         <div className="bottom--side">
-          {singleIllustration.image.map((singleImage, index) => (
+          {singleVisualDesign.image.map((singleImage, index) => (
             <div
               className="project--images--one"
               key={index}
