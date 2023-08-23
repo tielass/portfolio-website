@@ -16,8 +16,64 @@ html {
   scroll-behavior: smooth;
 }
 
+#light {
+  background-color: #F6F6F6;
+}
+
 /* Dark Theme */
 
-#dark .App {
+#dark {
   background-color: #2A2B32;
 }
+
+/* Introduction */
+
+#dark .intro--container {
+  background-color: #2A2B32;
+}
+
+#dark .intro--content {
+  color: #fff;
+}
+
+#dark .intro--content .social--media--intro a{
+  color: #fff;
+}
+
+#dark .intro--content .social--media--intro a:hover{
+  color: #FFBA2F;
+}
+
+#dark .social--media--art path {
+  fill: #fff;
+}
+
+#dark .social--media--art:hover path {
+  fill: #FFBA2F;
+}
+
+/* Experience */
+
+#dark .experience {
+  background-color: #34353A;
+  color: #fff;
+}
+
+#dark .experience h2 {
+  color: #fff;
+}
+
+#dark .experience .vertical-timeline-element-content.bounce-in {
+  background-color: #6b6d77;
+}
+
+/* Skills */
+
+#dark .skills--heading {
+  color: #fff;
+}
+
+#dark .black--square {
+  background-color: #34353A;
+}
+

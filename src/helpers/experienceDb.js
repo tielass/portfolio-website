@@ -70,3 +70,4 @@ export const experienceDb = [
     tags: ['Drawing analysis', 'Methods of Plasticity', 'History of Art and Design', 'Font and Caligraphy', 'Ergonomics', 'Industrial Design']
   },
 ]
+
