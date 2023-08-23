@@ -27,11 +27,11 @@ function Contact() {
       <h2 className="contact--heading">Have a question or want to work together?</h2>
       <form className='contact--form' ref={form} onSubmit={sendEmail}>
         <label htmlFor="user_name" className='form--label'>Name</label>
-        <input className='form--input' type="text" name='user_name' required/>
+        <input className='form--input' type="text" name='user_name' id='user_name' required />
         <label htmlFor="user_email" className='form--label'>E-mail</label>
-        <input className='form--input' type="text" name='user_email' required/>
+        <input className='form--input' type="text" name='user_email' id='user_email' required/>
         <label htmlFor="message" className='form--label'>Additional details</label>
-        <textarea name="message" id=""  rows="15" className='contact--textarea'></textarea>
+        <textarea name="message" id="message"  rows="15" className='contact--textarea'></textarea>
         <button className='contact--button' type='submit' >SUBMIT</button>
       </form>
       {isSuccessMessageVisible && (

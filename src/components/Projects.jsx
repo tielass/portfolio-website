@@ -20,7 +20,7 @@ function Projects() {
     <div className='projects'>
       <h2 className="projects--heading">Projects</h2>
       <ul className="projects--filter">
-        <li className="project--filter--item" key='1'>
+        <li className="project--filter--item" key={'1'}>
           <FilterButton name='All' tagActive={tag === 'All' ? true : false} handleSetTag={ setTag }/>
         </li>
         <li className="project--filter--item" key='2'>
@@ -36,7 +36,7 @@ function Projects() {
       <div className="projects--gallery--grid">
         {filteredProjects.map( project => {
           return (
-            <Link className='projects--card--link' to={`/development/${project.id}`}>
+            <Link className='projects--card--link' to={`/development/${project.id}`} key={project.id}>
               <ProjectCard key={project.id} title={project.title} image={project.image[0]} tag={project.tag}/>
             </Link>
           )

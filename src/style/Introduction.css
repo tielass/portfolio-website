@@ -3,6 +3,7 @@
   padding: 5rem;
   display: flex;
   justify-content: center;
+  align-items: start;
   background-color: #F6F6F6;
   background: url('../images/lightmode-bg.svg');
   background-repeat: no-repeat;
@@ -21,6 +22,7 @@
 
 .intro--heading {
   font-size: 42px;
+  margin: 0;
 }
 
 .yellow {

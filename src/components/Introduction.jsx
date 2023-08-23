@@ -13,7 +13,7 @@ function Introduction() {
       <div className="intro--content">
         <div className="intro--info--container">
           <h1 className='intro--heading'><span className='yellow'>Mihail</span> <br></br> Mihaylov</h1>
-          <p>I am a dedicated and results-driven professional who embarked on my career journey as a Frontend Engineer with unwavering passion and commitment. </p>
+          <p>Passionate about Frontend Software Engineering and armed with a solid foundation in web development from Le Wagon's prestigious bootcamp, I am driven to excel in a role that combines my expertise in visual design, problem-solving, and time management.</p>
           <div className="social--media--intro">
             <Link to='https://github.com/tielass' target="_blank"><GitHubIcon></GitHubIcon></Link>
             <Link

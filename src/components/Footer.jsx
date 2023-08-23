@@ -11,16 +11,22 @@
       <div className='footer'>
         <p>What we do in life echoes in eternity. </p>
         <div className="social--media">
-          <Link to='https://github.com/tielass' target="_blank"><GitHubIcon></GitHubIcon></Link>
-          <Link to='https://www.linkedin.com/in/tielass/' target="_blank"><LinkedInIcon ></LinkedInIcon></Link>
+          <Link to='https://github.com/tielass'
+          target="_blank"
+          title='Link to GitHub'><GitHubIcon></GitHubIcon></Link>
+          <Link to='https://www.linkedin.com/in/tielass/'
+          target="_blank"
+          title='Link to LinkedIn'><LinkedInIcon ></LinkedInIcon></Link>
           <Link
           to='https://www.behance.net/tielass'
           target="_blank"
-          className='social--media--art--footer'><BehanceIcon /></Link>
+          className='social--media--art--footer'><BehanceIcon
+          title='Link to Behance'/></Link>
           <Link
           to='https://tielass.artstation.com/'
           target="_blank"
-          className='social--media--art--footer'><ArtstationIcon /></Link>
+          className='social--media--art--footer'><ArtstationIcon
+          title='Link to Artstation'/></Link>
         </div>
         <div className="copyright">
         <p>Mihail Mihaylov &copy; 2023</p>

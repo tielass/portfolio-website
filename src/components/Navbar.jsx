@@ -8,6 +8,9 @@ import { ThemeContext } from '../contexts/ThemeContext'
 function Navbar() {
 
   const { theme, toggleTheme } = useContext(ThemeContext);
+  const switchStyle = {
+    color: '#F0AD2C',
+  }
 
   return (
     <div className='navbar'>
@@ -26,7 +29,8 @@ function Navbar() {
         <Switch
         checked={ theme === 'dark' }
         onChange={ toggleTheme }
-        color='warning'/>
+        color='warning'
+        style={switchStyle}/>
       </div>
     </div>
   )

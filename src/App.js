@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
@@ -16,7 +16,13 @@ import { ThemeContext } from './contexts/ThemeContext.jsx'
 
 function App() {
 
-  const [theme, setTheme] = useState('light')
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+
+  useEffect(() => {
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  // const [theme, setTheme] = useState('light')
 
   const toggleTheme = () => {
     setTheme((currTheme) => (currTheme === 'light' ? 'dark' : 'light'))

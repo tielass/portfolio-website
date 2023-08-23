@@ -32,7 +32,7 @@ function Experience() {
               <ul className='experience--tags'>
                 {element.tags.map( tag => {
                   return(
-                    <li className='experience--tag'>{tag}</li>
+                    <li className='experience--tag' key={tag}>{tag}</li>
                   )
                 })}
               </ul>
