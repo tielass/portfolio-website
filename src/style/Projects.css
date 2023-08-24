@@ -6,6 +6,7 @@
   background: url('../images/lightmode-bg2.svg');
   background-repeat: repeat;
   background-position: center top;
+  padding-top: 8rem;
 }
 
 .project--heading {

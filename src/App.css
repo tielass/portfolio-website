@@ -148,11 +148,11 @@ html {
 /* Footer links hover */
 
 #dark .footer .social--media a:hover {
-  color: #2A2B32;
+  color: #fff;
 }
 
 #dark .social--media--art--footer:hover path {
-  fill: #2A2B32;
+  fill: #fff;
 }
 
 /* Single Page */

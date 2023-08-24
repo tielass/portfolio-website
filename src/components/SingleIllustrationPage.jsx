@@ -42,7 +42,8 @@ function SingleProjectPage() {
         {/* Left Side */}
         <div className="arrow--left">
           {illustrationId !== 1 && (
-            <Link to={`/illustration/${singleIllustration.id}`} onClick={handlePreviousClick}>
+            <Link to={`/illustration/${singleIllustration.id}`} onClick={handlePreviousClick}
+            title='Previous Project'>
               <LeftArrow className="arrow--left--svg" />
             </Link>
           )}
@@ -55,7 +56,8 @@ function SingleProjectPage() {
         </div>
         <div className="arrow--right">
           {illustrationId !== illustrationDb.length && (
-            <Link to={`/illustration/${singleIllustration.id}`} onClick={handleNextClick}>
+            <Link to={`/illustration/${singleIllustration.id}`} onClick={handleNextClick}
+            title='Next Project'>
               <RightArrow className="arrow--right--svg" />
             </Link>
           )}
