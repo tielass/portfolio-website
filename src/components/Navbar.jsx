@@ -4,6 +4,7 @@ import Switch from '@mui/material/Switch';
 import '../style/Navbar.css'
 import { useContext } from 'react'
 import { ThemeContext } from '../contexts/ThemeContext'
+import ArrowUpwardOutlinedIcon from '@mui/icons-material/ArrowUpwardOutlined';
 
 function Navbar() {
 
@@ -11,7 +12,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 150) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -24,6 +25,10 @@ function Navbar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const { theme, toggleTheme } = useContext(ThemeContext);
   const switchStyle = {
@@ -50,6 +55,11 @@ function Navbar() {
         color='warning'
         style={switchStyle}/>
       </div>
+      {scrolled && (
+        <button className="scroll-to-top" onClick={scrollToTop}>
+          <ArrowUpwardOutlinedIcon />
+        </button>
+      )}
     </div>
   )
 }

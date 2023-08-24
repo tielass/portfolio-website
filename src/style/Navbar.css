@@ -15,11 +15,13 @@
 .navbar.scrolled {
   background-color: rgba(216, 216, 216, 0.8);
   opacity: 0.9;
+  border-bottom: 2px solid #F0AD2C;
 }
 
 #dark.navbar.scrolled {
   background-color: rgba(51, 51, 51, 0.8);
   opacity: 0.9;
+  border-bottom: 2px solid #F0AD2C;
 }
 
 .navbar .left--side {
@@ -164,4 +166,36 @@
   bottom: -10px;
   transition: 0.3s;
   font-weight: bold;
+}
+
+/* Scroll to top */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  color: #979797;
+  border: 3px solid #979797;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background: none;
+}
+
+.scroll-to-top:hover {
+  color: #F0AD2C;
+  border: 3px solid #F0AD2C;
+}
+
+/* Dark Theme */
+
+#dark .scroll-to-top {
+  color: #fff;
+  border: 3px solid #fff;
+}
+
+#dark .scroll-to-top:hover {
+  color: #F0AD2C;
+  border: 3px solid #F0AD2C;
 }
