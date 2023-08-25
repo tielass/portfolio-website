@@ -27,7 +27,7 @@ html {
 #dark .intro--content {
   background: url('./images/darkmode-bg.svg');
   background-repeat: repeat;
-  background-position: center top;
+  background-position: top;
 }
 
 #dark .intro--content {
@@ -86,8 +86,7 @@ html {
 #dark .projects {
   background-color: #34353A;
   background-image: url('./images/darkmode-bg2.svg');
-  background-repeat: no-repeat;
-  background-position: center;
+  background-repeat: repeat;
 }
 
 #dark .projects--heading,
