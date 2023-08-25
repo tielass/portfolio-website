@@ -50,6 +50,10 @@ html {
   fill: #FFBA2F;
 }
 
+#dark h1::after {
+  color: #000;
+}
+
 /* Experience */
 
 #dark .experience {
@@ -73,6 +77,10 @@ html {
 
 #dark .black--square {
   background-color: #34353A;
+}
+
+#dark .experience--tags .experience--tag {
+  color: #000000;
 }
 
 /* Progress Bar */
@@ -167,11 +175,19 @@ html {
 
 #dark .arrow--right path,
 #dark .arrow--left path {
-  fill: #fff;
+  fill: #FFBA2F;
 }
 
 #dark .arrow--right--svg:hover path,
 #dark .arrow--left--svg:hover path
 {
-  fill: #FFBA2F;
+  fill: #fff;
+}
+
+#dark .project--info--container a {
+  color: #FFBA2F;
+}
+
+#dark .project--info--container a:hover {
+  color: #fff;
 }

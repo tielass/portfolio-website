@@ -34,12 +34,17 @@
   object-fit: contain;
 }
 
+
 /* Right Side */
 
 .single--project--right {
   display: flex;
   flex-basis: 30%;
   text-align: center;
+}
+
+.project--title {
+  margin-bottom: 3rem;
 }
 
 /* Arrows */
@@ -69,6 +74,15 @@
   align-items: center;
 }
 
+.project--info--container a {
+  text-decoration: none;
+  color: #FFBA2F;
+  font-weight: bold;
+}
+
+.project--info--container a:hover {
+  color: #000;
+}
 /* Tools */
 
 .tools--container {

@@ -64,14 +64,14 @@ function SingleProjectPage() {
             <div>
               <h2 className='project--title'>{singleProject.title}</h2>
               <p className='project--description'>{singleProject.description}</p>
-              <Link to={singleProject.url} target="_blank"><p>{singleProject.url}</p></Link>
+              <Link to={singleProject.url} target="_blank">{singleProject.url}</Link>
             </div>
             <div className="tools--container">
               <h2 className="tools--heading">Tools Used</h2>
               <ul className="tools">
                 {singleProject.skills.map((skill) => (
                   <div className="project--tools">
-                    <li className='skill-tag'>{skill}</li>
+                    <li className='skill-tag' key={skill}>{skill}</li>
                   </div>
                 ))}
               </ul>

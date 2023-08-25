@@ -32,6 +32,14 @@ import CharacterDoodle4 from '../images/illustrationImages/character-doodle4-mih
 import CharacterDoodle5 from '../images/illustrationImages/character-doodle5-mihaylov.jpg'
 import CharacterDoodle6 from '../images/illustrationImages/character-doodle6-mihaylov.jpg'
 import CharacterDoodle7 from '../images/illustrationImages/character-doodle7-mihaylov.jpg'
+import Textures1 from '../images/illustrationImages/animal-textures-mihaylov.jpg'
+import Textures2 from '../images/illustrationImages/food-textures-mihaylov.jpg'
+import Fp1 from '../images/illustrationImages/fp-mihaylov1.jpg'
+import Fp2 from '../images/illustrationImages/fp-mihaylov2.jpg'
+import AmberPrison1 from '../images/illustrationImages/amberprison-mihaylov1.jpg'
+import AmberPrison2 from '../images/illustrationImages/amberprison-mihaylov2.png'
+
+
 
 export const illustrationDb = [
   {
@@ -176,6 +184,36 @@ export const illustrationDb = [
   },
   {
     id: 15,
+    title: 'Game textures',
+    description: 'A few game textures and items.',
+    image: [Textures1, Textures2],
+    type: "Game Asset",
+    skills: ['Illustration', '2D Art', 'Game assets', 'Photoshop', 'Textures'],
+    url: '',
+    tag: "Game Asset"
+  },
+  {
+    id: 16,
+    title: 'Frost Mage',
+    description: 'In the eerie depths of Naxxramas necropolis a formidable mage known as Fp the Arcanist harnesses the very essence of frost and shadow. Cloaked in swirling robes adorned with icy crystals, Fp commands an army of frozen horrors, guarding the necropolis with an icy grip. His chilling spells and strategic prowess make him both a guardian and a terror within Naxxramas, a force to be reckoned with for any adventurer daring to step into its frigid heart.',
+    image: [Fp1, Fp2],
+    type: "Character",
+    skills: ['Illustration', '2D Art', 'Character design', 'Photoshop', 'WoW', 'Fan Art'],
+    url: '',
+    tag: "Character"
+  },
+  {
+    id: 17,
+    title: 'Amber Druids village',
+    description: '',
+    image: [AmberPrison1, AmberPrison2],
+    type: "Game Asset",
+    skills: ['Illustration', '2D Art', 'Game Asset', 'Photoshop', 'Environment'],
+    url: '',
+    tag: "Game Asset"
+  },
+  {
+    id: 18,
     title: 'Character Doodles',
     description: '',
     image: [CharacterDoodle1, CharacterDoodle2, CharacterDoodle3, CharacterDoodle4, CharacterDoodle5, CharacterDoodle6, CharacterDoodle7],

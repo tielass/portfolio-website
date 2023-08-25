@@ -50,7 +50,7 @@ export const visualDesignDb = [
     id: 4,
     title: 'Free Delivery',
     description: ' ',
-    image: [FreeDelivery2, FreeDelivery1, FreeDelivery3, FreeDelivery4, FreeDelivery5],
+    image: [FreeDelivery2, FreeDelivery1, FreeDelivery5, FreeDelivery3, FreeDelivery4],
     type: "Character Design",
     skills: ['Illustration', '2D Art', 'Character design', 'Procreate', 'Concept Art'],
     url: '',
