@@ -29,7 +29,7 @@ function Visualdesign() {
           <FilterButton name='Visual Elements' tagActive={tag === 'Visual Elements' ? true : false} handleSetTag={ setTag }/>
         </li>
         <li className="project--filter--item">
-          <FilterButton name='Banner' tagActive={tag === 'Banner' ? true : false} handleSetTag={ setTag }/>
+          <FilterButton name='UI/UX' tagActive={tag === 'UI/UX' ? true : false} handleSetTag={ setTag }/>
         </li>
       </ul>
       <div className="projects--gallery--grid">

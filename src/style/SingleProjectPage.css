@@ -47,6 +47,10 @@
   margin-bottom: 3rem;
 }
 
+.project--description {
+  text-align: left;
+  line-height: 1.3;
+}
 /* Arrows */
 
 .arrow--right {
@@ -118,4 +122,10 @@
 .project--images--one--img {
   width: 200px;
   cursor: pointer;
+}
+
+/* Hover */
+
+.project--images--one:hover {
+  opacity: 0.8;
 }

@@ -47,7 +47,6 @@ function Navbar() {
       <div className="right--side">
         <NavLink className='navbar--link' to='/development'>Development</NavLink>
         <NavLink className='navbar--link' to='/illustration'>Illustration</NavLink>
-        <NavLink className='navbar--link' to='/uiux'>UI/UX</NavLink>
         <NavLink className='navbar--link' to='/visualdesign'>Visual Design</NavLink>
         <Switch
         checked={ theme === 'dark' }

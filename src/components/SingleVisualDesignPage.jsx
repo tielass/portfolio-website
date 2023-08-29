@@ -71,7 +71,7 @@ function SingleVisualDesignPage() {
               <h2 className="tools--heading">Tools Used</h2>
               <ul className="tools">
                 {singleVisualDesign.skills.map((skill) => (
-                  <div className="project--tools">
+                  <div className="project--tools" key={skill}>
                     <li className='skill-tag'>{skill}</li>
                   </div>
                 ))}

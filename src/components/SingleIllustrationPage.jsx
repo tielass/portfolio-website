@@ -35,6 +35,8 @@ function SingleProjectPage() {
     setActiveImageIndex(index)
   }
 
+
+
   return (
     <div className='single--page'>
       {/* Top Side */}
@@ -48,11 +50,13 @@ function SingleProjectPage() {
             </Link>
           )}
         </div>
+        {/* First image */}
         <div className="single--project--left">
             <img
             className="single--project--img"
             src={ singleIllustration.image[activeImageIndex]}
-            alt="test" />
+            alt="test"
+            />
         </div>
         <div className="arrow--right">
           {illustrationId !== illustrationDb.length && (
@@ -74,7 +78,7 @@ function SingleProjectPage() {
               <ul className="tools">
                 {singleIllustration.skills.map((skill) => (
                   <div className="project--tools">
-                    <li className='skill-tag'>{skill}</li>
+                    <li className='skill-tag' key={skill}>{skill}</li>
                   </div>
                 ))}
               </ul>
@@ -100,6 +104,7 @@ function SingleProjectPage() {
           ))}
         </div>
       )}
+
     </div>
   )
 }

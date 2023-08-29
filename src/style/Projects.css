@@ -80,3 +80,7 @@
 
 
 /* Hover */
+
+.projectcard--img--container:hover{
+  opacity: 0.8;
+}

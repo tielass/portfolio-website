@@ -3,10 +3,11 @@ import Beverages from '../images/visualDesignImages/alcohol-mihaylov.jpg'
 import CoffeeBeans from '../images/visualDesignImages/coffeebeans-mihaylov.jpg'
 import FreeDelivery1 from '../images/visualDesignImages/truck-mihaylov-500x500.jpg'
 import FreeDelivery2 from '../images/visualDesignImages/truck-mihaylov-240x400.jpg'
-import FreeDelivery3 from '../images/visualDesignImages/truck-mihaylov-160x600.jpg'
-import FreeDelivery4 from '../images/visualDesignImages/truck-mihaylov-120x600.jpg'
 import FreeDelivery5 from '../images/visualDesignImages/truck-mihaylov-1.jpg'
 import NatureMeetsSkin from '../images/visualDesignImages/nature-logo-mihaylov.jpg'
+import NatureMeetsSkin2 from '../images/visualDesignImages/nms1.jpg'
+import NatureMeetsSkin3 from '../images/visualDesignImages/nms2.jpg'
+import NatureMeetsSkin4 from '../images/visualDesignImages/nms3.jpg'
 import Somnofy1 from '../images/visualDesignImages/somnofy-1-mihaylov.jpg'
 import Somnofy2 from '../images/visualDesignImages/somnofy-2-mihaylov.jpg'
 import Omega from '../images/visualDesignImages/omega-logo-mihaylov.jpg'
@@ -39,7 +40,7 @@ export const visualDesignDb = [
   {
     id: 3,
     title: 'Coffee Beans Logo',
-    description: '',
+    description: 'Logo for a coffee and breakfast place.',
     image: [CoffeeBeans],
     type: "Character Design",
     skills: ['Illustration', '2D Art', 'Character design', 'Procreate', 'Concept Art'],
@@ -49,18 +50,18 @@ export const visualDesignDb = [
   {
     id: 4,
     title: 'Free Delivery',
-    description: ' ',
-    image: [FreeDelivery2, FreeDelivery1, FreeDelivery5, FreeDelivery3, FreeDelivery4],
+    description: 'Banner for a free delivery campaign.',
+    image: [FreeDelivery2, FreeDelivery1, FreeDelivery5],
     type: "Character Design",
     skills: ['Illustration', '2D Art', 'Character design', 'Procreate', 'Concept Art'],
     url: '',
-    tag: "Banner"
+    tag: "Visual Elements"
   },
   {
     id: 5,
     title: 'Nature Meets Skin',
-    description: ' ',
-    image: [NatureMeetsSkin],
+    description: 'Logo for a skin care series with all natural products "Nature Meets Skin".',
+    image: [NatureMeetsSkin, NatureMeetsSkin2, NatureMeetsSkin3, NatureMeetsSkin4],
     type: "Character Design",
     skills: ['Illustration', '2D Art', 'Character design', 'Procreate', 'Concept Art'],
     url: '',
@@ -69,7 +70,7 @@ export const visualDesignDb = [
   {
     id: 6,
     title: 'Somnofy',
-    description: ' ',
+    description: 'Logo for a sleep tracking app.',
     image: [Somnofy2, Somnofy1],
     type: "Character Design",
     skills: ['Illustration', '2D Art', 'Character design', 'Procreate', 'Concept Art'],
@@ -79,7 +80,7 @@ export const visualDesignDb = [
   {
     id: 7,
     title: 'Omega',
-    description: ' ',
+    description: 'Logo for a mens watch company.',
     image: [Omega],
     type: "Character Design",
     skills: ['Illustration', '2D Art', 'Character design', 'Procreate', 'Concept Art'],
@@ -89,7 +90,7 @@ export const visualDesignDb = [
   {
     id: 8,
     title: 'Birds',
-    description: ' ',
+    description: 'A contestant for a logo design for a bird watching app.',
     image: [Birds],
     type: "Character Design",
     skills: ['Illustration', '2D Art', 'Character design', 'Procreate', 'Concept Art'],
@@ -99,17 +100,17 @@ export const visualDesignDb = [
   {
     id: 9,
     title: 'Vintage Gym',
-    description: ' ',
+    description: 'Poster for a vintage gym event.',
     image: [VintageGym],
     type: "Character Design",
     skills: ['Illustration', '2D Art', 'Character design', 'Procreate', 'Concept Art'],
     url: '',
-    tag: "Banner"
+    tag: "Visual Elements"
   },
   {
     id: 10,
     title: 'Africa Endangered Species',
-    description: ' ',
+    description: 'An infographic for endangered species in Africa. The information is relevant as of 2016.',
     image: [AfricaEndangered],
     type: "Character Design",
     skills: ['Illustration', '2D Art', 'Character design', 'Procreate', 'Concept Art'],
@@ -119,7 +120,7 @@ export const visualDesignDb = [
   {
     id: 11,
     title: 'Asia Endangered Species',
-    description: ' ',
+    description: 'An infographic for endangered species in Asia. The information is relevant as of 2016.',
     image: [AsiaEndangered],
     type: "Character Design",
     skills: ['Illustration', '2D Art', 'Character design', 'Procreate', 'Concept Art'],

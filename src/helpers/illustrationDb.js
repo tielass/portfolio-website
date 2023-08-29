@@ -175,7 +175,7 @@ export const illustrationDb = [
   {
     id: 14,
     title: 'Sci-Fi UI',
-    description: '',
+    description: 'A sci-fi game UI I',
     image: [SciFiUI],
     type: "GUI",
     skills: ['Illustration', '2D Art', 'User Interface', 'Photoshop', 'GUI'],
@@ -205,7 +205,7 @@ export const illustrationDb = [
   {
     id: 17,
     title: 'Amber Druids village',
-    description: '',
+    description: 'Nestled within the heart of an ancient woodland, the ethereal village of Amberhaven evokes a sense of timelessness, resonant of the most enchanting fantasy realms. Its cobblestone streets wind between quaint cottages adorned with intricate carvings, while the villagers, donned in rich earth-toned attire, practice the art of preserving their departed within luminescent crystals of amber. These shimmering relics, glinting in the sunlight, stand as both memorials to the past and guardians against the encroaching shadows that haunt the fringes of their enchanted realm.',
     image: [AmberPrison1, AmberPrison2],
     type: "Game Asset",
     skills: ['Illustration', '2D Art', 'Game Asset', 'Photoshop', 'Environment'],
@@ -215,7 +215,7 @@ export const illustrationDb = [
   {
     id: 18,
     title: 'Character Doodles',
-    description: '',
+    description: 'Various character portraits.',
     image: [CharacterDoodle1, CharacterDoodle2, CharacterDoodle3, CharacterDoodle4, CharacterDoodle5, CharacterDoodle6, CharacterDoodle7],
     type: "Character",
     skills: ['Illustration', '2D Art', 'Character design', 'Photoshop'],
