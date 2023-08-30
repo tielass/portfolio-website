@@ -35,8 +35,6 @@ function SingleProjectPage() {
     setActiveImageIndex(index)
   }
 
-
-
   return (
     <div className='single--page'>
       {/* Top Side */}

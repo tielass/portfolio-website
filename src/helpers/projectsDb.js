@@ -46,7 +46,7 @@ export const projectsDb = [
   {
     id: 4,
     title: 'GH Api Task',
-    description: 'A small project to fetch information from GitHubs API and using that information to create or update an account on FreshDesk, using their API. Alongside the API task I have also added unit tests using Jest.',
+    description: 'A NodeJS project, that fetches information from GitHubs API and uses that information to create or update an account on FreshDesk, using their API. Alongside the API task I have also added unit tests using Jest.',
     image: [Githublogo],
     type: "Backend",
     skills: ['NodeJS', 'Javascript', 'Backend', 'CLI', 'API', 'Jest', 'Unit testing'],

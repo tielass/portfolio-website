@@ -23,7 +23,7 @@ function Contact() {
     };
 
   return (
-    <div className='contact--container' id='contact--container'>
+    <div className='contact--container' id='contact'>
       <h2 className="contact--heading">Have a question or want to work together?</h2>
       <form className='contact--form' ref={form} onSubmit={sendEmail}>
         <label htmlFor="user_name" className='form--label'>Name</label>

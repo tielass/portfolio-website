@@ -22,7 +22,7 @@ html {
   background-color: #2A2B32;
 }
 
-/* Introduction */
+/* Dark Theme Introduction */
 
 #dark .intro--content {
   background: url('./images/darkmode-bg.svg');
@@ -54,7 +54,7 @@ html {
   color: #000;
 }
 
-/* Experience */
+/* Dark Theme Experience */
 
 #dark .experience {
   background-color: #34353A;
@@ -69,7 +69,7 @@ html {
   background-color: #2A2B32;
 }
 
-/* Skills */
+/* Dark Theme Skills */
 
 #dark .skills--heading {
   color: #fff;
@@ -83,13 +83,13 @@ html {
   color: #000000;
 }
 
-/* Progress Bar */
+/* Dark Theme Progress Bar */
 
 #dark .progress--bar--wrapper {
   background-color: #a6a6a6;
 }
 
-/* Projects */
+/* Dark Theme Projects */
 
 #dark .projects {
   background-color: #34353A;
@@ -102,27 +102,27 @@ html {
   color: #fff;
 }
 
-/* Hover dark */
+/* Dark Theme Hover */
 
 #dark .project--filter--item button:hover{
   color: #FFBA2F;
   font-weight: bold;
 }
 
-/* Active project dark */
+/* Active project Dark */
 
 #dark .projects--filter .project--filter--item .active{
   color: #FFBA2F;
   font-weight: bold;
 }
 
-/* Cards */
+/* Dark Theme Cards */
 
 #dark .projects--card--link {
   color: #fff;
 }
 
-/* Contact */
+/* Dark Theme Contact */
 
 #dark .contact--heading {
   color: #fff;
@@ -137,7 +137,7 @@ html {
   background-color: #46484E;
 }
 
-/* Footer */
+/* Dark Theme Footer */
 
 #dark .footer {
   background-color: #212228;
@@ -152,7 +152,7 @@ html {
   fill: #FFBA2F;
 }
 
-/* Footer links hover */
+/* Dark Theme Footer links Hover */
 
 #dark .footer .social--media a:hover {
   color: #fff;
@@ -162,7 +162,7 @@ html {
   fill: #fff;
 }
 
-/* Single Page */
+/* Dark Theme Single Page */
 
 #dark .single--page {
   background-color: #2A2B32;
@@ -192,50 +192,137 @@ html {
   color: #fff;
 }
 
-/* Download hover */
+/* Media Queries */
 
-/* .image-container {
-  position: relative;
-  display: inline-block;
+@media screen and (max-width: 576px) {
+  /* Navbar */
+  .navbar .right--side .navbar--link {
+    display: none;
+  }
+
+  /* Introduction */
+
+  .intro--content {
+    flex-direction: column-reverse;
+  }
+
+  .intro--container {
+    margin: 3rem 0;
+  }
+
+  .intro--img--container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro--img {
+    width: 90%;
+  }
+
+  .intro--container .intro--content {
+    padding: 0;
+    margin: 1rem;
+  }
+
+  .intro--container .intro--content .intro--info--container {
+    width: 100%;
+    margin: 3rem 0;
+  }
+
+  .break-on-small-screens {
+    display: none;
+  }
+
+  .intro--info--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro--info--container .intro--heading{
+    font-size: 46px;
+  }
+
+  .intro--info--container p {
+    text-align: center;
+    width: 85%;
+  }
+
+  .social--media--intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social--media--intro a {
+    margin: 0 2rem;
+  }
+
+  .intro--content .social--media--intro .social--media--art {
+    scale: 1.4;
+  }
+
+  .intro--content .social--media--intro a {
+    scale: 1.7;
+  }
+
+  .intro--info--container .contact--me {
+    width: 90%;
+    height: 4rem;
+    margin-top: 2rem;
+  }
+
+  /* Skills */
+
+  .skills .skills--container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+    margin: 0;
+  }
+
+  .skills--card .black--square {
+    margin-bottom: 1rem;
+  }
+
+  .skills--card:last-child {
+    margin-bottom: 3rem;
+  }
+
+  /* Projects */
+
+  .homepage .projects {
+    padding-top: 4rem;
+  }
+
+  .projects .projects--gallery--grid{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .projects--filter .project--filter--item button {
+    font-size: 18;
+   }
+
+  /* Contact */
+
+  .contact--container .contact--form {
+    width: 80%;
+  }
+
+  .contact--form .contact--button {
+    width: 100%;
+    height: 4rem;
+  }
+
+  /* Footer */
+
+  .footer .social--media{
+    scale: 1.5;
+  }
+
+  .footer .social--media a {
+    margin: auto 1rem;
+  }
+
 }
-
-.hover-image {
-  max-width: 90%;
-  max-height: 95%;
-  display: block;
-  object-fit: contain;
-}
-
-.image-popup {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.2s;
-}
-
-.image-container:hover .image-popup {
-  visibility: visible;
-  opacity: 1;
-}
-
-.download-button,
-.open-button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  margin: 5px;
-  cursor: pointer;
-}
-
-.download-button:hover,
-.open-button:hover {
-  background-color: #555;
-} */

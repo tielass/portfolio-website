@@ -165,7 +165,7 @@ export const illustrationDb = [
   {
     id: 13,
     title: 'Fantasy Game UI',
-    description: '',
+    description: 'Game Settings interface for a fantasy mobile game. Includes a music slider, general sound slider and a close menu button.',
     image: [FantasyUI],
     type: "GUI",
     skills: ['Illustration', '2D Art', 'User Interface', 'Photoshop', 'GUI'],
@@ -175,7 +175,7 @@ export const illustrationDb = [
   {
     id: 14,
     title: 'Sci-Fi UI',
-    description: 'A sci-fi game UI I',
+    description: 'Game Settings interface for a sci-fi mobile game. Includes a music slider, general sound slider and a close menu button.',
     image: [SciFiUI],
     type: "GUI",
     skills: ['Illustration', '2D Art', 'User Interface', 'Photoshop', 'GUI'],
