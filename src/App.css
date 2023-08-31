@@ -218,6 +218,7 @@ html {
   }
 
   .intro--img {
+    margin-top: 2rem;
     width: 90%;
   }
 
@@ -348,6 +349,7 @@ html {
   }
 
   .intro--img {
+    margin-top: 2rem;
     width: 90%;
   }
 
@@ -477,6 +479,7 @@ html {
   }
 
   .intro--img {
+    margin-top: 4rem;
     width: 90%;
   }
 
@@ -507,7 +510,7 @@ html {
 
   .intro--info--container p {
     text-align: center;
-    width: 85%;
+    width: 65%;
   }
 
   .social--media--intro {
@@ -529,7 +532,7 @@ html {
   }
 
   .intro--info--container .contact--me {
-    width: 90%;
+    width: 65%;
     height: 4rem;
     margin-top: 2rem;
   }
@@ -571,7 +574,7 @@ html {
   }
 
   .contact--form .contact--button {
-    width: 100%;
+    width: 65%;
     height: 4rem;
   }
 
