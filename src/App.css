@@ -194,6 +194,7 @@ html {
 
 /* Media Queries */
 
+/* Sizes until 576px */
 @media screen and (max-width: 576px) {
   /* Navbar */
   .navbar .right--side .navbar--link {
@@ -317,12 +318,392 @@ html {
 
   /* Footer */
 
-  .footer .social--media{
-    scale: 1.5;
-  }
-
   .footer .social--media a {
     margin: auto 1rem;
   }
 
+}
+
+/* Sizes between 576px to 768px */
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  /* Navbar */
+  .navbar .right--side .navbar--link {
+    display: none;
+  }
+
+  /* Introduction */
+
+  .intro--content {
+    flex-direction: column-reverse;
+  }
+
+  .intro--container {
+    margin: 3rem 0;
+  }
+
+  .intro--img--container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro--img {
+    width: 90%;
+  }
+
+  .intro--container .intro--content {
+    padding: 0;
+    margin: 1rem;
+  }
+
+  .intro--container .intro--content .intro--info--container {
+    width: 100%;
+    margin: 3rem 0;
+  }
+
+  .break-on-small-screens {
+    display: none;
+  }
+
+  .intro--info--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro--info--container .intro--heading{
+    font-size: 46px;
+  }
+
+  .intro--info--container p {
+    text-align: center;
+    width: 85%;
+  }
+
+  .social--media--intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social--media--intro a {
+    margin: 0 2rem;
+  }
+
+  .intro--content .social--media--intro .social--media--art {
+    scale: 1.4;
+  }
+
+  .intro--content .social--media--intro a {
+    scale: 1.7;
+  }
+
+  .intro--info--container .contact--me {
+    width: 90%;
+    height: 4rem;
+    margin-top: 2rem;
+  }
+
+  /* Skills */
+
+  .skills .skills--container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin: 0;
+  }
+
+  .skills--card .black--square {
+    margin-bottom: 1rem;
+  }
+
+  .skills--card:last-child {
+    margin-bottom: 3rem;
+  }
+
+  /* Projects */
+
+  .homepage .projects {
+    padding-top: 4rem;
+  }
+
+  .projects .projects--gallery--grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects--filter .project--filter--item button {
+    font-size: 18;
+   }
+
+  /* Contact */
+
+  .contact--container .contact--form {
+    width: 80%;
+  }
+
+  .contact--form .contact--button {
+    width: 100%;
+    height: 4rem;
+  }
+
+  /* Footer */
+
+  .footer .social--media a {
+    margin: auto 1rem;
+  }
+}
+
+/* Sizes between 768px to 992px */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  /* Navbar */
+  .navbar .right--side .navbar--link {
+    display: none;
+  }
+
+  /* Introduction */
+
+  .intro--content {
+    flex-direction: column-reverse;
+  }
+
+  .intro--container {
+    margin: 3rem 0;
+  }
+
+  .intro--img--container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro--img {
+    width: 90%;
+  }
+
+  .intro--container .intro--content {
+    padding: 0;
+    margin: 1rem;
+  }
+
+  .intro--container .intro--content .intro--info--container {
+    width: 100%;
+    margin: 3rem 0;
+  }
+
+  .break-on-small-screens {
+    display: none;
+  }
+
+  .intro--info--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro--info--container .intro--heading{
+    font-size: 46px;
+  }
+
+  .intro--info--container p {
+    text-align: center;
+    width: 85%;
+  }
+
+  .social--media--intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social--media--intro a {
+    margin: 0 2rem;
+  }
+
+  .intro--content .social--media--intro .social--media--art {
+    scale: 1.4;
+  }
+
+  .intro--content .social--media--intro a {
+    scale: 1.7;
+  }
+
+  .intro--info--container .contact--me {
+    width: 90%;
+    height: 4rem;
+    margin-top: 2rem;
+  }
+
+  /* Skills */
+
+  .skills .skills--container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    margin: 0;
+  }
+
+  .skills--card .black--square {
+    margin-bottom: 1rem;
+  }
+
+  .skills--card:last-child {
+    margin-bottom: 3rem;
+  }
+
+  /* Projects */
+
+  .homepage .projects {
+    padding-top: 4rem;
+  }
+
+  .projects .projects--gallery--grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects--filter .project--filter--item button {
+    font-size: 18;
+   }
+
+  /* Contact */
+
+  .contact--container .contact--form {
+    width: 80%;
+  }
+
+  .contact--form .contact--button {
+    width: 100%;
+    height: 4rem;
+  }
+
+  /* Footer */
+
+  .footer .social--media a {
+    margin: auto 1rem;
+  }
+}
+
+/* Sizes between 992px to 1200px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* Navbar */
+  .navbar .right--side .navbar--link {
+    display: none;
+  }
+
+  /* Introduction */
+
+  .intro--content {
+    flex-direction: column-reverse;
+  }
+
+  .intro--container {
+    margin: 3rem 0;
+  }
+
+  .intro--img--container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .intro--img {
+    margin-top: 4rem;
+    width: 60%;
+  }
+
+  .intro--container .intro--content {
+    padding: 0;
+    margin: 1rem;
+  }
+
+  .intro--container .intro--content .intro--info--container {
+    width: 100%;
+    margin: 3rem 0;
+  }
+
+  .break-on-small-screens {
+    display: none;
+  }
+
+  .intro--info--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro--info--container .intro--heading{
+    font-size: 46px;
+  }
+
+  .intro--info--container p {
+    text-align: center;
+    width: 60%;
+  }
+
+  .social--media--intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .social--media--intro a {
+    margin: 0 2rem;
+  }
+
+  .intro--content .social--media--intro .social--media--art {
+    scale: 1.4;
+  }
+
+  .intro--content .social--media--intro a {
+    scale: 1.7;
+  }
+
+  .intro--info--container .contact--me {
+    width: 60%;
+    height: 4rem;
+    margin-top: 2rem;
+  }
+
+  /* Skills */
+
+  .skills .skills--container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 0 0 5rem 0;
+  }
+
+  .skills--card .black--square {
+    margin-bottom: 1rem;
+  }
+  /* Projects */
+
+  .homepage .projects {
+    padding-top: 4rem;
+  }
+
+  .projects .projects--gallery--grid{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .projects--filter .project--filter--item button {
+    font-size: 18;
+   }
+
+  /* Contact */
+
+  .contact--container .contact--form {
+    width: 80%;
+  }
+
+  .contact--form .contact--button {
+    width: 60%;
+    height: 4rem;
+  }
+
+  /* Footer */
+
+  .footer .social--media a {
+    margin: auto 1rem;
+  }
 }
