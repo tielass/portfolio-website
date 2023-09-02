@@ -12,6 +12,7 @@ import { visualDesignSkills } from '../helpers/visualDesignSkills'
 
 function Skills() {
 
+  // eslint-disable-next-line no-unused-vars
   const [completed, setCompleted] = useState(0);
 
   useEffect(() => {
