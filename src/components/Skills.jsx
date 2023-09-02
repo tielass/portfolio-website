@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import ProgressBar from './ProgressBar'
 import '../style/Skills.css'
 import JavascriptIcon from '@mui/icons-material/Javascript';
@@ -13,11 +13,11 @@ import { visualDesignSkills } from '../helpers/visualDesignSkills'
 function Skills() {
 
   // eslint-disable-next-line no-unused-vars
-  const [completed, setCompleted] = useState(0);
+  // const [completed, setCompleted] = useState(0);
 
-  useEffect(() => {
-    setInterval(() => setCompleted(Math.floor(Math.random() * 100) + 1), 2000);
-  }, []);
+  // useEffect(() => {
+  //   setInterval(() => setCompleted(Math.floor(Math.random() * 100) + 1), 2000);
+  // }, []);
 
 
   return (
