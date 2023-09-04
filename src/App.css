@@ -196,6 +196,7 @@ html {
 
 /* Sizes until 576px */
 @media screen and (max-width: 576px) {
+
   /* Navbar */
   .navbar .right--side .navbar--link {
     display: none;
@@ -243,8 +244,9 @@ html {
     align-items: center;
   }
 
-  .intro--info--container .intro--heading{
-    font-size: 46px;
+  .intro--content .intro--info--container .intro--heading{
+    /* font-size: 46px; */
+    text-align: center;
   }
 
   .intro--info--container p {
@@ -450,6 +452,10 @@ html {
 
   /* Footer */
 
+  .footer {
+    padding: 0;
+  }
+
   .footer .social--media a {
     margin: auto 1rem;
   }
@@ -504,7 +510,7 @@ html {
     align-items: center;
   }
 
-  .intro--info--container .intro--heading{
+  .intro--content .intro--info--container .intro--heading{
     font-size: 46px;
   }
 
