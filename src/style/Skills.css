@@ -23,12 +23,12 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 200px;
+  width: 220px;
 }
 
 /* Black Square */
 .black--square {
-  height: 200px;
+  height: 250px;
   background-color: #2A2B32;
   border-radius: 12px;
   margin-bottom: 3rem;
@@ -70,7 +70,7 @@
 
 .custom--skill--text {
   color: #fff;
-  font-size: 10px;
+  font-size: 12px;
   padding: 0 20px;
 }
 

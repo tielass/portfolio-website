@@ -31,7 +31,7 @@ function Skills() {
             <div className="black--square--info">
               <JavascriptIcon className='js--icon'/>
               <h3 className='custom--skill--header'>Frontend</h3>
-              <p className='custom--skill--text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <p className='custom--skill--text'>Frontend involves creating the UI/UX of a website or application, focusing on the visual design, layout, and interactivity.</p>
             </div>
           </div>
           <div className="skills--progress">
@@ -46,7 +46,7 @@ function Skills() {
             <div className="black--square--info">
               <DrawIcon className='draw--icon'/>
               <h3 className='custom--skill--header'>Illustration</h3>
-              <p className='custom--skill--text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <p className='custom--skill--text'>Illustration is the captivating alchemy of transforming thoughts, narratives, or abstract notions into compelling visual stories.</p>
             </div>
           </div>
           <div className="skills--progress">
@@ -61,7 +61,7 @@ function Skills() {
             <div className="black--square--info">
               <ColorLensOutlinedIcon className='illustration--icon'/>
               <h3 className='custom--skill--header'>UI / UX</h3>
-              <p className='custom--skill--text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <p className='custom--skill--text'>UI/UX design is the harmonious blend of aesthetics and functionality, where artistry meets user-centered innovation to create seamless, engaging digital experiences.</p>
             </div>
           </div>
           <div className="skills--progress">
@@ -75,8 +75,8 @@ function Skills() {
           <div className="black--square">
             <div className="black--square--info">
               <DesignServicesOutlinedIcon className='design--icon'/>
-              <h3 className='custom--skill--header'>Graphic Design</h3>
-              <p className='custom--skill--text'>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <h3 className='custom--skill--header'>Visual Design</h3>
+              <p className='custom--skill--text'>Visual design is the creative process of transforming ideas and concepts into visually captivating elements, harnessing the power of color, typography, imagery, and layout.</p>
             </div>
           </div>
           <div className="skills--progress">

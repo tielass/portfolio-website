@@ -1,7 +1,7 @@
 export const illustrationSkills = [
-  { bgcolor: "#FFC221", completed: 90, skill: 'Character Art'},
+  { bgcolor: "#FFC221", completed: 90, skill: 'Characters'},
   { bgcolor: "#FFC221", completed: 80, skill: 'Game Assets'},
-  { bgcolor: "#FFC221", completed: 93, skill: 'Environment Art'},
-  { bgcolor: "#FFC221", completed: 63, skill: 'Traditional'},
-  { bgcolor: "#FFC221", completed: 73, skill: 'GUI'},
+  { bgcolor: "#FFC221", completed: 80, skill: 'Traditional Art'},
+  { bgcolor: "#FFC221", completed: 65, skill: 'Environment'},
+  { bgcolor: "#FFC221", completed: 65, skill: 'GUI'},
 ];
