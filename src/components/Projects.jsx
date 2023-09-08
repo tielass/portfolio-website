@@ -27,7 +27,7 @@ function Projects() {
           <FilterButton name='React' tagActive={tag === 'React' ? true : false} handleSetTag={ setTag }/>
         </li>
         <li className="project--filter--item" key='3'>
-          <FilterButton name='Ruby / Rails' tagActive={tag === 'Ruby / Rails' ? true : false} handleSetTag={ setTag }/>
+          <FilterButton name='Ruby/Rails' tagActive={tag === 'Ruby/Rails' ? true : false} handleSetTag={ setTag }/>
         </li>
         <li className="project--filter--item" key='4'>
           <FilterButton name='JavaScript' tagActive={tag === 'JavaScript' ? true : false} handleSetTag={ setTag }/>

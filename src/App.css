@@ -308,6 +308,10 @@ html {
     font-size: 18;
    }
 
+   .projects--filter .project--filter--item {
+      margin: 0.5rem;
+   }
+
   /* Contact */
 
   .contact--container .contact--form {
