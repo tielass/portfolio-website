@@ -325,8 +325,8 @@ html {
 
   /* Footer */
 
-  .footer .social--media a {
-    margin: auto 1rem;
+  .App .footer .social--media a {
+    margin: auto 1.5rem;
   }
 
 }
