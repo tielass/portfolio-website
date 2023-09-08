@@ -12,6 +12,7 @@ import SingleIllustrationPage from './components/SingleIllustrationPage'
 import ScrollToTop from './components/ScrollToTop';
 import SingleVisualDesignPage from './components/SingleVisualDesignPage';
 import { ThemeContext } from './contexts/ThemeContext.jsx'
+import { Helmet } from "react-helmet";
 
 function App() {
 
@@ -26,10 +27,18 @@ function App() {
   const toggleTheme = () => {
     setTheme((currTheme) => (currTheme === 'light' ? 'dark' : 'light'))
   }
+  
 
   return (
     <ThemeContext.Provider value={{theme, toggleTheme}}>
+
       <div className="App" id={ theme }>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>MMihaylov</title>
+          <link rel="canonical" href="http://mysite.com/example" />
+          <meta name="description" content="My personal portfolio website" />
+        </Helmet>
         <Router>
           <ScrollToTop />
           <Navbar />
