@@ -6,15 +6,11 @@ function Contact() {
   const form = useRef();
   const [isSuccessMessageVisible, setIsSuccessMessageVisible] = useState(false)
 
-  const serviceId = process.env.REACT_APP_SERVICE_ID;
-  const templateId = process.env.REACT_APP_TEMPLATE_ID;
-  const publicKey = process.env.REACT_APP_PUBLIC_KEY;
-
   const sendEmail = (e) => {
 
     e.preventDefault();
 
-    emailjs.sendForm({serviceId}, {templateId}, form.current, {publicKey})
+    emailjs.sendForm('service_1oe9mqd', 'template_ejci9uj', form.current, 'rcbgbFeo3CBwhThwW')
       .then((result) => {
           console.log(result.text);
           setIsSuccessMessageVisible(true); // Show success message
