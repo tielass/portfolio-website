@@ -198,7 +198,7 @@ html {
 @media screen and (max-width: 576px) {
 
   .homepage {
-    margin: 5rem 1rem;
+    margin: 5rem 0;
   }
 
   /* Navbar */
@@ -213,7 +213,7 @@ html {
   }
 
   .intro--container {
-    margin: 3rem 0;
+    margin: 3rem 1rem;
   }
 
   .intro--img--container {
@@ -285,6 +285,9 @@ html {
 
   /* Skills */
 
+  .skills {
+    margin: 0.2rem 1rem;
+  }
   .skills .skills--container {
     grid-template-columns: repeat(1, 1fr);
     gap: 4rem;
@@ -306,6 +309,10 @@ html {
   .custom--skill--header{
     font-size: 24px;
     margin: 1rem;
+  }
+
+  .black--square .black--square--info{
+    padding: 20px 10px 10px 10px;
   }
 
   .black--square--info .custom--skill--text{
@@ -338,8 +345,22 @@ html {
 
   /* Contact */
 
+  .contact--container {
+    margin: 0.2rem 1rem;
+  }
+
   .contact--container .contact--form {
-    width: 80%;
+    width: 100%;
+  }
+
+  .contact--form label {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+
+  .contact--form .form--input {
+    height: 3rem;
   }
 
   .contact--form .contact--button {
