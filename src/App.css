@@ -373,6 +373,11 @@ html {
 
   .contact--form .form--input {
     height: 3rem;
+    border-bottom: 3px solid #FFBA2F;
+  }
+
+  .contact--form .contact--textarea {
+    border-bottom: 3px solid #FFBA2F;
   }
 
   .contact--form .contact--button {
