@@ -168,6 +168,16 @@
 
   .skill-tag {
     font-size: 22px;
+    padding: 7px 14px;
+    font-weight: bold;
+  }
+
+  .single--project--left{
+    border: none;
+  }
+
+  .project--images--one--img{
+    width: 90%;
   }
 
  }
