@@ -306,9 +306,21 @@ html {
     margin-bottom: 3rem;
   }
 
-  .custom--skill--header{
+  .black--square--info .custom--skill--header{
     font-size: 24px;
     margin: 1rem;
+    color: #FFBA2F;
+  }
+
+  .black--square--info .design--icon,
+  .black--square--info .js--icon,
+  .black--square--info .draw--icon,
+  .black--square--info .illustration--icon{
+    color: #FFBA2F;
+  }
+
+  .black--square--info .js--icon {
+    border: 2px solid #FFBA2F;
   }
 
   .black--square .black--square--info{
@@ -316,7 +328,7 @@ html {
   }
 
   .black--square--info .custom--skill--text{
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
   }
 
