@@ -198,7 +198,7 @@ html {
 @media screen and (max-width: 576px) {
 
   .homepage {
-    margin: 5rem 0;
+    margin: 5rem 0 0 0;
   }
 
   /* Navbar */
