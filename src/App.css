@@ -22,6 +22,12 @@ html {
   background-color: #2A2B32;
 }
 
+/* Navbar */
+
+#dark .navbar .logo a{
+  color: #fff;
+}
+
 /* Dark Theme Introduction */
 
 #dark .intro--content {
@@ -202,9 +208,9 @@ html {
   }
 
   /* Navbar */
-  .navbar .right--side .navbar--link {
+  /* .navbar .right--side .navbar--link {
     display: none;
-  }
+  } */
 
   /* Introduction */
 
@@ -396,9 +402,9 @@ html {
 /* Sizes between 576px to 768px */
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   /* Navbar */
-  .navbar .right--side .navbar--link {
+  /* .navbar .right--side .navbar--link {
     display: none;
-  }
+  } */
 
   /* Introduction */
 
@@ -530,9 +536,9 @@ html {
 /* Sizes between 768px to 992px */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   /* Navbar */
-  .navbar .right--side .navbar--link {
+  /* .navbar .right--side .navbar--link {
     display: none;
-  }
+  } */
 
   /* Introduction */
 
@@ -660,9 +666,9 @@ html {
 /* Sizes between 992px to 1200px */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   /* Navbar */
-  .navbar .right--side .navbar--link {
+  /* .navbar .right--side .navbar--link {
     display: none;
-  }
+  } */
 
   /* Introduction */
 
